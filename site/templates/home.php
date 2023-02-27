@@ -4,7 +4,7 @@
 
 ?>
 
-<div id="content">
+<div pw-id="content">
 	Homepage content 
 </div>	
 	
