@@ -6,7 +6,9 @@
 
 $assets = $config->urls->templates . "assets/"; // not used? see _head
 $dist = $config->urls->root . "dist/";
+$sections = $config->paths->templates . "inc/sections/";
 $components = $config->paths->templates . "inc/components/";
 
 // Globals
+$logo = $assets ."images/logo.svg";
 $email = "info@kohoutekresto.cz";
