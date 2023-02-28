@@ -64,12 +64,13 @@ section {
   overflow: hidden;
   z-index: -1;
 }
-.border > div {
+.border {
+  & > div {
   background-color: var(--border-color);
   width: max(100vw, 1800px);
   min-height: 500px;
   clip-path: var(--border-a);
-}
+}}
 section#about {
   --border-color: var(--c-bg-80);
 }
