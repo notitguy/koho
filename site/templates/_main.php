@@ -16,7 +16,7 @@ $home = $pages->get('/'); // homepage
 
 ?><!DOCTYPE html>
 <html lang="<?php echo _x('cs', 'HTML language code'); ?>">
-	<?php include("./inc/sections/head.php"); ?>
+	<?php include("./inc/sections/_head.php"); ?>
 	<body>
 		<?php include("./inc/sections/header.php"); ?>
 		<?php include("./inc/sections/hero.php"); ?>
