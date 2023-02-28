@@ -45,6 +45,9 @@ body {
 section {
   margin-bottom: -5rem;
 }
+ul:not(.list) {
+  list-style: none;
+}
 /* Utilities */
 .container {
   max-width: 60rem;
@@ -66,11 +69,12 @@ section {
 }
 .border {
   & > div {
-  background-color: var(--border-color);
-  width: max(100vw, 1800px);
-  min-height: 500px;
-  clip-path: var(--border-a);
-}}
+    background-color: var(--border-color);
+    width: max(100vw, 1800px);
+    min-height: 500px;
+    clip-path: var(--border-a);
+  }
+}
 section#about {
   --border-color: var(--c-bg-80);
 }

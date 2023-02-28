@@ -14,7 +14,9 @@
 
 $home = $pages->get('/'); // homepage
 
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html lang="<?php echo _x('cs', 'HTML language code'); ?>">
 	<?php include("./inc/sections/_head.php"); ?>
 	<body>
