@@ -1,33 +1,10 @@
-section.hero .background {
-  filter: url('#goo');
-  display: flex;
-  overflow: hidden;
-  position: absolute;
+section.hero {
+  min-height: 70vh;
+  background-color: var(--c-bg-dark);
+  /* to go under next section */
+  position: relative;
   z-index: -1;
 }
-.background > div {
-  background-color: lightblue;
-  min-width: 1700px;
-  min-height: 600px;
-  clip-path: polygon(
-    0% 10%,
-    5% 15%,
-    10% 12%,
-    15% 10%,
-    20% 12%,
-    30% 8%,
-    35% 10%,
-    40% 5%,
-    45% 3%,
-    50% 0%,
-    60% 10%,
-    65% 8%,
-    70% 12%,
-    80% 8%,
-    85% 12%,
-    90% 15%,
-    95% 12%,
-    100% 10%,
-    100% 100%,
-    0% 100%);
+section.hero h1 {
+  color: var(--c-primary-90);
 }

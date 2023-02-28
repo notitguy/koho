@@ -21,6 +21,7 @@ $home = $pages->get('/'); // homepage
 		<?php include("./inc/sections/header.php"); ?>
 		<?php include("./inc/sections/hero.php"); ?>
 		<?php include("./inc/sections/about.php"); ?>
+		<?php include("./inc/sections/cockerel.php"); ?>
 		<?php include("./inc/sections/footer.php"); ?>
 	</body>
 </html>

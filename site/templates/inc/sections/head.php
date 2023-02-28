@@ -4,6 +4,7 @@
   <title><?php echo $page->title; ?></title>
   <link rel="stylesheet" type="text/css" href="<?php echo $assets; ?>styles/reset.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo $assets; ?>styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="<?php echo $assets; ?>styles/header.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo $assets; ?>styles/hero.css" />
   <link rel="stylesheet" type="text/css" href="<?php echo $assets; ?>styles/footer.css" />
   <script src="<?php echo $assets; ?>scripts/main.js"></script>
