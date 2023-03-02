@@ -12,14 +12,24 @@ do {
   const span = document.createElement("span");
   span.append(runningText);
   container.appendChild(span);
-} while (i < 5);
+} while (i < 15);
 
 // Events toggle
-const eventContainer = document.querySelectorAll(".events > div");
+const eventsParent = document.querySelector(".events");
+const events = document.querySelectorAll(".events > div");
 
-for (const el of eventContainer) {
-  el.addEventListener('click', () => {
-    // console.log(i.target);
-    el.classList.toggle("--expanded");
+for (const event of events) {
+  event.addEventListener('click', () => {
+
+    event.dataset.expanded = "true";
+
+    [...events]
+      .filter(ev => ev.dataset.expanded = "true")
+      .map(ev => { 
+        if(ev !== event) {
+          delete ev.dataset.expanded;
+        }
+      });
   });
+
 }

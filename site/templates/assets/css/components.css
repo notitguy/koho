@@ -42,7 +42,9 @@ a.btn {
 /* Running text */
 .track {
   border-block: 2px dashed var(--c-primary);
+  background-color: #e2cda2;
   overflow: hidden;
+  transform: rotate3d(0, 0, 1, 359deg);
 }
 .running-text {
   display: flex;
@@ -53,8 +55,9 @@ a.btn {
   animation-direction: reverse;
 
   & h2, & span {
-    /* font-family: var(--font); */
-    font-size: clamp(1rem, 4vw, 2rem);
+    font-family: var(--font);
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    font-weight: 600;
     color: var(--c-primary-50);
     display: flex;
     gap: var(--gutter-l);
@@ -84,7 +87,7 @@ a.btn {
     column-gap: var(--gutter-s);
     padding-block: var(--gutter-s);
 
-    &.--expanded {
+    &[data-expanded="true"] {
       background-color: var(--c-primary-70);
     }
     &:not(:first-child) {
