@@ -15,21 +15,20 @@ do {
 } while (i < 15);
 
 // Events toggle
-const eventsParent = document.querySelector(".events");
 const events = document.querySelectorAll(".events > div");
 
 for (const event of events) {
   event.addEventListener('click', () => {
 
-    event.dataset.expanded = "true";
+    // toggle data attribute
+    !event.dataset.expanded ? event.dataset.expanded = "true" : delete event.dataset.expanded;
 
-    [...events]
-      .filter(ev => ev.dataset.expanded = "true")
-      .map(ev => { 
-        if(ev !== event) {
-          delete ev.dataset.expanded;
-        }
-      });
+    // filter siblings and remove attribute
+    [...events].filter(ev => {
+      if (ev !== event && ev.dataset.expanded) {
+        delete ev.dataset.expanded;
+      }
+    })
   });
 
 }
