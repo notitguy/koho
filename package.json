@@ -19,9 +19,9 @@
   },
   "scripts": {
     "watch": "concurrently \"npm:watch-*\"",
-    "watch-css": "parcel watch site/templates/assets/styles/_main.css",
-    "watch-js": "parcel watch site/templates/assets/scripts/_main.js",
-    "build-css": "parcel build site/templates/assets/styles/_main.css"
+    "watch-css": "parcel watch site/templates/assets/css/_main.css",
+    "watch-js": "parcel watch site/templates/assets/js/_main.js --no-hmr",
+    "build-css": "parcel build site/templates/assets/css/_main.css"
   },
   "devDependencies": {
     "concurrently": "^7.6.0",

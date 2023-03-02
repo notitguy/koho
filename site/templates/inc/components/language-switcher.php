@@ -2,7 +2,7 @@
 
 // remember what language is set to
 $savedLanguage = $user->language;
-echo "<ul>";
+
 foreach($languages as $language) {
 
   // if user is already viewing the page in this language, skip it
@@ -16,8 +16,8 @@ foreach($languages as $language) {
   $user->language = $language;
 
   // output a link to this page in the other language
-  echo "<li><a href='$page->url'>$language->title</a></li>";
+  echo "<a href='$page->url'>$language->title</a>";
 }
-echo "</ul>";
+
 // restore the original language setting
 $user->language = $savedLanguage;

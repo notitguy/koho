@@ -3,5 +3,5 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title><?php echo $page->title; ?></title>
   <link rel="stylesheet" type="text/css" href="<?php echo $dist; ?>_main.css" />
-  <!-- <script src="<?php echo $dist; ?>main.js"></script> -->
+  <script src="<?php echo $dist; ?>_main.js" async defer ></script>
 </head>

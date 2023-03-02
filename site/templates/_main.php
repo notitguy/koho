@@ -12,20 +12,18 @@
 /** @var Pages $pages */
 /** @var Config $config */
 
-$home = $pages->get('/'); // homepage
-
 ?>
 
 <!DOCTYPE html>
 <html lang="<?php echo _x('cs', 'HTML language code'); ?>">
 	<?php include($sections ."_head.php"); ?>
-	<body>
+	<body class="<?= $page->template->name ?>">
 		<?php include($sections ."header.php"); ?>
-		<main>
+
 			<?php include($sections ."hero.php"); ?>
 			<?php include($sections ."about.php"); ?>
 			<?php include($sections ."cockerel.php"); ?>
 			<?php include($sections ."footer.php"); ?>
-		</main>
+
 	</body>
 </html>
