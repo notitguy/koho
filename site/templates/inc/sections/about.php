@@ -7,7 +7,6 @@ $locationIcon = $assets ."/icons/location.svg";
 $galleryIcon = $assets ."/icons/gallery.svg";
 ?>
 
-<div class="border --80"><div></div></div>
 <section>
   <div class="banner container"></div>
   <?php include ($components ."running-text.php") ?>
@@ -36,9 +35,17 @@ $galleryIcon = $assets ."/icons/gallery.svg";
           Gallery
         </a> -->
       </div>
+      </div>
+    <div class="gallery">
+      <a href=""><img src="<?= $assets ."/images/photos/about1.jpg" ?>" alt="Kohoutek Restaurant"></a>
+      <a href=""><img src="<?= $assets ."/images/photos/about2.jpg" ?>" alt="Kohoutek Restaurant"></a>
+      <a href=""><img src="<?= $assets ."/images/photos/about3.jpg" ?>" alt="Kohoutek Restaurant"></a>
+      <a href="">
+        <img src="<?= $assets ."/images/photos/about3.jpg" ?>" alt="Kohoutek Restaurant">
+        <span>+20</span>
+      </a>
     </div>
-
-    <div class="card">
+    <!-- <div class="card">
       <img src="<?= $assets ."/images/photos/about1.jpg" ?>" alt="Kohoutek Restaurant">
       <h3>Dipisicing elit</h3>
       <p>Amet consectetur adipisicing elit. At excepturi perferendis ab recusandae, iure possimus fugit voluptatum, deserunt ratione consequuntur numquam est sapiente voluptates veniam ullam, nisi sunt. Totam, quam.</p>
@@ -47,7 +54,7 @@ $galleryIcon = $assets ."/icons/gallery.svg";
     <img src="<?= $assets ."/images/photos/about3.jpg" ?>" alt="Kohoutek Restaurant">
       <h3>Quod explicabo</h3>
       <p>Consectetur adipisicing elit. Dolorum inventore ipsam quod explicabo molestias accusantium. Itaque similique maiores commodi debitis nulla quam placeat! Harum dolore laudantium praesentium quidem aliquam. Quo?</p>
-    </div>
+    </div> -->
     <!-- <div class="card">
       <p>Magnam exercitationem quidem voluptatem suscipit laborum hic! Deleniti dolores debitis ut explicabo quisquam culpa itaque recusandae, saepe error rerum officia, earum odio.</p>
     </div> -->

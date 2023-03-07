@@ -1,6 +1,6 @@
 <?php namespace ProcessWire;
 
-$cockerelImage = $assets ."images/main/cockerel.png";
+$plateImage = $assets ."images/main/plate.png";
 
 ?>
 <section class="hero">
@@ -13,7 +13,8 @@ $cockerelImage = $assets ."images/main/cockerel.png";
       <img src="<?= $assets ."icons/delivery-car.svg" ?>" width="75" height="75" alt="">
     </div>
     <div class="hero-image">
-      <img src="<?= $cockerelImage ?>" width="800" alt="">
+      <img src="<?= $plateImage ?>" width="800" alt="">
     </div>
   </div>
 </section>
+<div class="border --80"><div></div></div>

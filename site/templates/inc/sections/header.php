@@ -17,8 +17,8 @@ $legIcon = $assets. "icons/leg.svg";
       <a href="#"><?= $shop ?></a>
       <a href="#"><?= $findUs ?></a>
     </nav>
-    <a href="<?= $home->url?>">
-      <img src="<?= $logo ?>" class="logo" alt="Kohoutek">
+    <a href="<?= $home->url?>" class="logo">
+      <img src="<?= $logo ?>" alt="Kohoutek">
     </a>
     <nav class="mobile">
       <?php include ($components ."language-switcher.php") ?>

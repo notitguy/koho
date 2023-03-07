@@ -3,14 +3,14 @@
   border-block: 2px dashed var(--c-primary);
   background-color: #e2cda2;
   overflow: hidden;
-  transform: rotate3d(0, 0, 1, 359deg);
+  /* transform: rotate3d(0, 0, 1, 359deg); causes flick*/
 }
 .running-text {
   display: flex;
   white-space: nowrap;
   gap: var(--gutter-l);
   padding-block: var(--gutter-s);
-  animation: marquee 30s linear infinite;
+  animation: marquee 20s linear infinite;
   animation-direction: reverse;
 
   &:hover {
@@ -38,7 +38,7 @@
 }
 @keyframes marquee {
   0% {
-    transform: translateZ(0);
+    transform: translate3d(0);
   }
   100% {
     transform: translate3d(-50%,0,0);
