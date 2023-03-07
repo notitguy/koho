@@ -1,5 +1,5 @@
 section.hero {
-  height: 75vh;
+  height: 68vh;
 
   & .container {
     display: flex;
@@ -13,6 +13,14 @@ section.hero {
     align-items: center;
     gap: var(--gutter);
   }
+  & .hero-image {
+    z-index: 1;
+    margin-top: var(--gutter);
+
+    & > img {
+      filter: drop-shadow(0px 0px 20px black);
+    }
+  }
 }
 @media (width >= 768px) {
   section.hero {
@@ -25,4 +33,5 @@ section.hero {
 }
 section.hero h1 {
   color: var(--c-primary-70);
+  margin-top: 1rem;
 }

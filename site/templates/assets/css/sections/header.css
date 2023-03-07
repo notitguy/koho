@@ -20,14 +20,14 @@ header {
   }
 }
 @media (width < 768px) {
-  nav.desktop {
+  nav.desktop, a:has(.logo) {
     display: none;
   }
   header .container {
     justify-content: flex-end;
   }
 }
-.nav-icon {
+/* .nav-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,8 +44,8 @@ header {
   &:not(:hover)::after {
     width: 60%;
   }
-}
-/* .nav-icon {
+} */
+.nav-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +61,8 @@ header {
       transform: rotate(0deg);
     }
   }
-} */
+}
 .logo {
   filter: invert(86%) sepia(30%) saturate(261%) hue-rotate(358deg) brightness(97%) contrast(88%);
+  margin-block: 1rem;
 }

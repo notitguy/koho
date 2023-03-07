@@ -1,0 +1,22 @@
+#cockerel {
+
+  & h2 {
+    text-align: center;
+    margin-bottom: -2vw; /*because the section has padding block*/
+  }
+  & .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15ch), 1fr));
+    gap: var(--gutter);
+
+    & ul {
+      & li {
+        margin: var(--gutter-s);
+
+        & h3 {
+          color: var(--c-primary);
+        }
+      }
+    }
+  }
+}

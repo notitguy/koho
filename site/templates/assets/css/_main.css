@@ -1,6 +1,4 @@
 @import './reset.css';
 @import './base.css';
-@import './components.css';
-@import './header.css';
-@import './hero.css';
-@import './footer.css';
+@import './components/_components.css';
+@import './sections/_sections.css';

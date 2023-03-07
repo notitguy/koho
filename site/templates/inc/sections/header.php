@@ -1,12 +1,12 @@
 <?php namespace ProcessWire;
 
-$about = _x('About', 'header');
+$about = _x('Our story', 'header');
 $menu = _x('Menu', 'header');
 $shop = _x('Shop', 'header');
 $findUs = _x('Find us', 'header');
 $reservation = _x('Reservation', 'header');
 
-$legIcon = $assets. "images/leg.svg";
+$legIcon = $assets. "icons/leg.svg";
 ?>
 
 <header>
@@ -17,10 +17,13 @@ $legIcon = $assets. "images/leg.svg";
       <a href="#"><?= $shop ?></a>
       <a href="#"><?= $findUs ?></a>
     </nav>
+    <a href="<?= $home->url?>">
+      <img src="<?= $logo ?>" class="logo" alt="Kohoutek">
+    </a>
     <nav class="mobile">
       <?php include ($components ."language-switcher.php") ?>
       <a href="mailto:<?= $email; ?>" class="btn --secondary"><?= $reservation ?></a>
-      <span class="nav-icon"></span>
+      <!-- <span class="nav-icon"><img src="<?= $legIcon ?>" width="24" alt=""><img src="<?= $legIcon ?>" width="24" alt=""></span> -->
     </nav>
   </div>
 </header>

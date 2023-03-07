@@ -54,11 +54,18 @@
   --c-bg-dark: hsl(18deg 4% 18%);
   --c-bg-80: hsl(40deg 59% 80%);
   --c-bg-90: hsl(39deg 57% 90%);
-  --font-heading: 'gsm', sans-serif;
+  --font-hb: 'gsb', sans-serif;
+  --font-hm: 'gsm', sans-serif;
   --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --gutter-s: 0.75rem;
   --gutter: 1.5rem;
   --gutter-l: 3rem;
+  --gutter-xl: 6vmax;
+  --corner-s: 0.3rem;
+  --corner-inner: 0.5rem;
+  --corner: 0.9rem;
+  --duration-fast: 0.07s;
+  --duration: 0.2s;
 }
 @media (width < 768px) {
   :root {
@@ -92,37 +99,42 @@ body {
 }
 h1, h2, h3,
 .running-text span {
-  font-family: var(--font-heading);
+  font-family: var(--font-hb);
   text-transform: uppercase;
   font-weight: normal;
 }
 h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+h2 {
+  font-size: clamp(1.4rem, 4vw, 2.5rem);
+  color: var(--c-accent);
 }
 h3 {
+  font-family: var(--font-hm);
   font-size: clamp(1rem, 4vw, 1.2rem);
 }
-section {
-  /* margin-bottom: -5rem; */
-  background-color: var(--border-color);
-
-  &#about {
-    --border-color: var(--c-bg-80);
-    background-color: var(--border-color);
-  }
-  &#cockerel {
-    --border-color: var(--c-bg-90);
-  }
+p {
+  margin-block: var(--gutter-s);
 }
 ul:not(.list) {
   list-style: none;
 }
+/* img {
+  border-radius: var(--corner-inner);
+} */
+main > section {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gutter-xl);
+}
+
 /* Utilities */
 .container {
   max-width: 80rem;
   margin-inline: auto;
   /* border: 1px dotted #57495e; */
-
+  padding-inline: 1rem;
   &.--small {
     max-width: 40rem;
   }
@@ -142,22 +154,29 @@ ul:not(.list) {
     height: 120px;
     clip-path: var(--border-b);
   }
-  &.--80 > div {
+  &.--80 > div, &.--80 + section {
     background-color: var(--c-bg-80);
   }
-  &.--90 > div {
+  &.--90 > div, &.--90 + section {
     background-color: var(--c-bg-90);
   }
+  & + section {
+    padding-block: 5rem 10rem;
+    margin-bottom: -10rem;
+  }
 }
+
 @media (width < 768px) {
   .border {
 
     & > div {
       height: 100px;
     }
+
+    & + section {
+      padding-block: 5rem 9rem;
+      margin-bottom: -12rem;
+    }
   }
 }
-.border + section {
-  padding-block: 5rem 10rem;
-  margin-bottom: -10rem;
-}
+

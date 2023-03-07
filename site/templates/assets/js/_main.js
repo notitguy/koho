@@ -15,20 +15,31 @@ do {
 } while (i < 15);
 
 // Events toggle
-const events = document.querySelectorAll(".events > div");
+const cards = document.querySelectorAll(".event__card");
+const headers = document.querySelectorAll(".event__header");
 
-for (const event of events) {
-  event.addEventListener('click', () => {
+for (const header of headers) {
 
-    // toggle data attribute
-    !event.dataset.expanded ? event.dataset.expanded = "true" : delete event.dataset.expanded;
+  // select parent card, card body
+  const card = header.parentElement;
+  const body = header.nextElementSibling;
 
-    // filter siblings and remove attribute
-    [...events].filter(ev => {
-      if (ev !== event && ev.dataset.expanded) {
-        delete ev.dataset.expanded;
+  header.addEventListener('click', () => {
+    
+    // toggle data attribute and body height
+    if (!card.dataset.expanded) {
+      card.dataset.expanded = "true";
+      body.style.height = body.scrollHeight + 'px';
+    } else {
+      delete card.dataset.expanded;
+      body.style.height = 0;
+    }
+    // filter other cards
+    [...cards].filter(el => {
+      if (el !== card && el.dataset.expanded) {
+        delete el.dataset.expanded;
+        el.lastElementChild.style.height = 0;
       }
     })
   });
-
 }

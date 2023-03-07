@@ -1,0 +1,59 @@
+/* Running text */
+.track {
+  border-block: 2px dashed var(--c-primary);
+  background-color: #e2cda2;
+  overflow: hidden;
+  transform: rotate3d(0, 0, 1, 359deg);
+}
+.running-text {
+  display: flex;
+  white-space: nowrap;
+  gap: var(--gutter-l);
+  padding-block: var(--gutter-s);
+  animation: marquee 30s linear infinite;
+  animation-direction: reverse;
+
+  &:hover {
+    animation-play-state: paused;
+
+    & h2::after, & span::after {
+      animation-duration: 0.5s;
+    }
+  }
+
+  & h2, & span {
+    font-family: var(--font);
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    font-weight: 600;
+    color: var(--c-primary-50);
+    display: flex;
+    gap: var(--gutter-l);
+
+    &::after {
+      content: url(../../icons/peanut.svg);
+      display: inline-block;
+      animation: peanuts 5s linear infinite;
+    }
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translate3d(-50%,0,0);
+  }
+}
+@keyframes peanuts {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(90deg);
+  }
+  66% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
