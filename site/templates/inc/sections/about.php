@@ -8,7 +8,7 @@ $galleryIcon = $assets ."/icons/gallery.svg";
 ?>
 
 <section>
-  <div class="banner container"></div>
+  <div class="banner container">This is a place for a<span>BANNER/FLYER</span>It won't show, if there is no banner.</div>
   <?php include ($components ."running-text.php") ?>
   <?php include ($components ."eventlist-home.php") ?>
   <article id="about" class="container">
@@ -18,31 +18,30 @@ $galleryIcon = $assets ."/icons/gallery.svg";
     </div>
     <div class="about__body">
       <h2>We are Kohoutek!</h2>
-      <p>We are the first restaurant in Czech republic to bring young rooster - an Italian specialty. Kohoutek is also a concept store restaurant - all items you see inside is available to purchase. <a href="">See our online shop.</a></p>
+      <p>We are the first restaurant in Czech republic to bring young rooster - an Italian specialty. Kohoutek is also a concept store restaurant - all items you see inside is available to purchase. <a href="#">See our online shop.</a></p>
       <p>It’s our mission to serve only the best quality Italian cockerel.</p>
       <p>Give it a taste and let us know what you think!</p>
       <div class="tiles">
-        <a href="" class="btn">
+        <a href="#" class="btn">
           <img src="<?= $menuIcon ?>" width="32" height="32" alt="">
           Menu
         </a>
-        <a href="" class="btn">
+        <a href="#" class="btn">
           <img src="<?= $locationIcon ?>" width="32" height="32" alt="">
           Find us
         </a>
-        <!-- <a href="">
+        <!-- <a href="#">
           <img src="<?= $galleryIcon ?>" width="32" height="32" alt="">
           Gallery
         </a> -->
       </div>
       </div>
     <div class="gallery">
-      <a href=""><img src="<?= $assets ."/images/photos/about1.jpg" ?>" alt="Kohoutek Restaurant"></a>
-      <a href=""><img src="<?= $assets ."/images/photos/about2.jpg" ?>" alt="Kohoutek Restaurant"></a>
-      <a href=""><img src="<?= $assets ."/images/photos/about3.jpg" ?>" alt="Kohoutek Restaurant"></a>
-      <a href="">
+      <a href="#"><img src="<?= $assets ."/images/photos/about5.jpg" ?>" alt="Kohoutek Restaurant"></a>
+      <a href="#"><img src="<?= $assets ."/images/photos/about1.jpg" ?>" alt="Kohoutek Restaurant"></a>
+      <a href="#">
         <img src="<?= $assets ."/images/photos/about3.jpg" ?>" alt="Kohoutek Restaurant">
-        <span>+20</span>
+        <span>+12</span>
       </a>
     </div>
     <!-- <div class="card">

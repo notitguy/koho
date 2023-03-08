@@ -8,7 +8,7 @@ $plateImage = $assets ."images/main/plate.png";
     <h1>Delicious Italian cockerel</h1>
     <div class="cta">
       <a href="#" class="btn --primary">Delivery
-        <img src="<?= $assets ."icons/bag.svg" ?>" width="20" height="20" alt="">
+        <img src="<?= $assets ."icons/bag.svg" ?>" width="26" height="26" alt="">
       </a>
       <img src="<?= $assets ."icons/delivery-car.svg" ?>" width="75" height="75" alt="">
     </div>

@@ -68,6 +68,7 @@ header {
     }
   }
 }
-.logo {
-  filter: invert(86%) sepia(30%) saturate(261%) hue-rotate(358deg) brightness(97%) contrast(88%);
+.logo img {
+  /* filter: invert(86%) sepia(30%) saturate(261%) hue-rotate(358deg) brightness(97%) contrast(88%); */
+  filter: invert(74%) sepia(72%) saturate(213%) hue-rotate(347deg) brightness(93%) contrast(85%);
 }

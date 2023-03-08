@@ -22,7 +22,7 @@ $legIcon = $assets. "icons/leg.svg";
     </a>
     <nav class="mobile">
       <?php include ($components ."language-switcher.php") ?>
-      <a href="mailto:<?= $email; ?>" class="btn --secondary"><?= $reservation ?></a>
+      <a href="#" class="btn --secondary"><?= $reservation ?></a>
       <!-- <span class="nav-icon"><img src="<?= $legIcon ?>" width="24" alt=""><img src="<?= $legIcon ?>" width="24" alt=""></span> -->
     </nav>
   </div>
