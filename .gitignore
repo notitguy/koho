@@ -6,3 +6,4 @@ site/assets/files
 node_modules
 .parcel-cache
 dist
+static
