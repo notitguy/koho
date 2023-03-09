@@ -42,7 +42,11 @@
       </li>
     </ul>
   </article>
-
+  <h3>
+    <img src="<?= $assets ."/icons/splash-left.svg" ?>" width="32" alt="">
+    Choose your menu
+    <img src="<?= $assets ."/icons/splash-right.svg" ?>" width="32" alt="">
+  </h3>
   <section id="menu" class="container">
     <a href="">
       <img src="<?= $assets ."/images/photos/menu1.jpg" ?>" alt="">

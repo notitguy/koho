@@ -14,7 +14,7 @@ a.btn {
   border-radius: var(--corner-s);
   transition-property: top, left, box-shadow;
   transition-duration: var(--duration-fast);
-  transition-timing-function: ease;
+  transition-timing-function: var(--easing);
 
   &:hover {
     top: -2px; left: -2px;
@@ -34,7 +34,7 @@ a.btn {
     /* box-shadow: 3px 3px 0; */
     transition-property: top, left;
     transition-duration: var(--duration-fast);
-    transition-timing-function: ease;
+    transition-timing-function: var(--easing);
     position: absolute;
     top: 4px; left: 4px;
     z-index: -1;

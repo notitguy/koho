@@ -41,7 +41,7 @@
     & a {
       position: relative;
       height: fit-content; /*for borders*/
-      transition: transform var(--duration) ease;
+      transition: transform var(--duration) var(--easing);
       text-decoration: none;
 
       & img {

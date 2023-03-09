@@ -66,6 +66,7 @@
   --corner: 0.5rem;
   --duration-fast: 0.07s;
   --duration: 0.2s;
+  --easing: cubic-bezier(0.16, 1, 0.3, 1);
 }
 @media (width < 768px) {
   :root {
