@@ -3,8 +3,8 @@
 ?>
 
 <div class="border --90"><div></div></div>
-<section id="cockerel">
-  <article class="container">
+<section>
+  <article id="cockerel" class="container">
     <h2>It's cockerel, not a chicken</h2>
     <div class="body">
       <h3>What even is a cockerel?</h3>
@@ -42,4 +42,24 @@
       </li>
     </ul>
   </article>
+
+  <section id="menu" class="container">
+    <a href="">
+      <img src="<?= $assets ."/images/photos/menu1.jpg" ?>" alt="">
+      <!-- <span></span> -->
+      <div class="body">
+        <h2>Menu</h2>
+        <i>Open</i>
+      </div>
+    </a>
+    <a href="">
+      <img src="<?= $assets ."/images/photos/menu2.jpg" ?>" alt="">
+      <!-- <span></span> -->
+      <div class="body">
+        <h2>Lunch<br>Menu</h2>
+        <i>Open</i>
+      </div>
+    </a>
+  </section>
+
 </section>

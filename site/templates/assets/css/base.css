@@ -99,9 +99,12 @@ body {
 }
 h1, h2, h3,
 .running-text span {
-  font-family: var(--font-hb);
   text-transform: uppercase;
   font-weight: normal;
+}
+h1, h2 {
+  font-family: var(--font-hb);
+  letter-spacing: -1px;
 }
 h1 {
   font-size: clamp(1.8rem, 4vw, 2.8rem);
@@ -124,6 +127,9 @@ p {
 }
 ul:not(.list) {
   list-style: none;
+}
+a {
+  text-decoration: none;
 }
 /* img {
   border-radius: var(--corner-inner);
