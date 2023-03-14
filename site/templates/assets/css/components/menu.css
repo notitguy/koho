@@ -1,6 +1,22 @@
 section#menu {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--gutter);
+
+  & h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gutter-s);
+    font-size: clamp(1rem, 3.7vw, 1.6rem);
+    color: var(--c-accent);
+    flex-basis: 100%;
+    margin-bottom: var(--gutter-s);
+  
+    & img {
+      animation: splash 4s linear infinite;
+    }
+  }
 
   & a {
     display: grid;
@@ -52,21 +68,14 @@ section#menu {
   }
 }
 
-h3:has( + #menu) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--gutter-s);
-  font-size: clamp(1rem, 3.7vw, 1.6rem);
-  color: var(--c-accent);
 
-  & img {
-    animation: splash 4s linear infinite;
-  }
-}
 @media (width < 768px) {
   section#menu {
     flex-direction: column;
+
+    & h3 img {
+      width: 24px;
+    }
   }
 }
 
