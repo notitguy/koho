@@ -51,18 +51,18 @@
       }
 
       &:nth-child(1) {
-        transform: rotate(-1deg);
+        transform: rotate3d(1,1,1,-1deg);
         grid-row: span 2;
       }
       &:nth-child(2) {
-        transform: rotate(-2deg);
+        transform: rotate3d(1,1,1,-2deg);
       }
       /* &:nth-child(3) {
         transform: rotate(-2deg);
       } */
       &:nth-child(3) {
         grid-column: 2;
-        transform: rotate(2deg);
+        transform: rotate3d(1,1,1,2deg);
         display: grid;
         place-items: center;
 

@@ -20,7 +20,7 @@
 
     & img {
       position: relative; /*on top of border*/
-      border-radius: var(--corner-s);
+      /* border-radius: var(--corner-s); */
     }
     
     &::before {
@@ -64,8 +64,8 @@
 
       & h3 {
         font-size: 0.9rem;
-        color: var(--c-primary-70);
-        background-color: var(--c-primary);
+        color: var(--c-primary);
+        background-color: var(--c-primary-70);
         border-radius: var(--corner-s);
         width: fit-content;
         padding: 0.5rem 1rem;
@@ -77,7 +77,7 @@
           position: absolute;
           top: 30%;
           left: -0.4rem;
-          border-right: 0.5rem solid var(--c-primary); 
+          border-right: 0.5rem solid var(--c-primary-70); 
           border-top: 0.5rem solid transparent;
           border-bottom: 0.5rem solid transparent; 
         }

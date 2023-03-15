@@ -31,5 +31,8 @@
     "drafts": {
       "nesting": true
     }
+  },
+  "dependencies": {
+    "swiper": "^9.1.0"
   }
 }

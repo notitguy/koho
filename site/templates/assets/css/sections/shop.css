@@ -1,0 +1,69 @@
+section#shop {
+  & article {
+    display: flex;
+    gap: var(--gutter-l);
+  }
+  & h2 {
+    width: fit-content;
+    text-align: center;
+    color: var(--c-primary);
+    transform: rotate(-5deg);
+    margin-bottom: var(--gutter-l);
+  }
+  & a.btn {
+    margin-top: var(--gutter-l);
+  }
+  & .shop__tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter);
+
+    & figure {
+      width: 45%;
+      overflow: hidden;
+      background-color: var(--c-primary-70);
+      border-radius: var(--corner);
+      border: 2px solid var(--c-primary);
+      transform: rotate3d(1, -1, 0, 333deg);
+      transition-property: box-shadow, transform;
+      transition-duration: var(--duration);
+      transition-timing-function: var(--easing);
+
+      &:hover {
+        box-shadow: 4px 5px var(--c-primary);
+        transform: rotate3d(1, -1, 0, 333deg) translate3d(-4px, -5px, 0);
+      }
+        
+      & img {
+        height: auto;
+      }
+
+      & figcaption {
+        padding: var(--gutter-s);
+        color: var(--c-primary);
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (width < 768px) {
+  section#shop article {
+    flex-direction: column;
+
+    & figcaption {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (width > 768px) {
+
+  section#shop article {
+
+    & .shop__tiles figure {
+      width: 171px;
+    }
+  }
+}

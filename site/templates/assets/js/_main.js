@@ -43,3 +43,60 @@ for (const header of headers) {
     })
   });
 }
+
+// Swiper
+
+// core version + navigation, pagination modules:
+import Swiper, { Navigation, CardsEffect, EffectCards } from 'swiper';
+// import Swiper and modules styles
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+
+// init Swiper:
+const swiper = new Swiper('.swiper', {
+  // configure Swiper to use modules
+  modules: [Navigation, EffectCards],
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  effect: 'cards',
+  breakpoints: {
+    480: {
+      cardsEffect: {
+        perSlideOffset: 30,
+      },
+    }
+  },
+  grabCursor: true,
+  autoHeight: true,
+});
+
+// Expand/shrink review card
+
+const reviewText = document.querySelectorAll('.review__text');
+
+reviewText.forEach(el => {
+
+  const reviewCard = el.parentElement;
+
+  el.addEventListener('click', () => {
+
+    if (!el.dataset.expanded) {
+      el.dataset.expanded = "true";
+      el.style.height = el.scrollHeight + 'px';
+    } else {
+      delete el.dataset.expanded;
+      el.style.height = 130 + 'px';
+    }
+
+  })
+});

@@ -23,6 +23,8 @@
 			<?php include($sections ."hero.php"); ?>
 			<?php include($sections ."about.php"); ?>
 			<?php include($sections ."cockerel.php"); ?>
+			<?php include($sections ."shop.php"); ?>
+			<?php include($sections ."reviews.php"); ?>
 			<?php include($sections ."footer.php"); ?>
 
 	</body>

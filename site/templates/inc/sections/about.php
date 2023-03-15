@@ -7,6 +7,7 @@ $locationIcon = $assets ."/icons/location.svg";
 $galleryIcon = $assets ."/icons/gallery.svg";
 ?>
 
+<div class="border --80"><div></div></div>
 <section>
   <div class="banner container">This is a place for a<span>BANNER/FLYER</span>It won't show, if there is no banner.</div>
   <?php include ($components ."running-text.php") ?>
@@ -37,7 +38,7 @@ $galleryIcon = $assets ."/icons/gallery.svg";
       </div>
       </div>
     <div class="gallery">
-      <a href="#"><img src="<?= $assets ."/images/photos/about5.jpg" ?>" alt="Kohoutek Restaurant"></a>
+      <a href="#"><img src="<?= $assets ."/images/photos/about5.jpg" ?>" width="388" alt="Kohoutek Restaurant"></a>
       <a href="#"><img src="<?= $assets ."/images/photos/about1.jpg" ?>" alt="Kohoutek Restaurant"></a>
       <a href="#">
         <img src="<?= $assets ."/images/photos/about3.jpg" ?>" alt="Kohoutek Restaurant">

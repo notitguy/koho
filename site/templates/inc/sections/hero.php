@@ -13,4 +13,3 @@
   </div>
   <?php include ($components ."plate.php") ?>
 </section>
-<div class="border --80"><div></div></div>
