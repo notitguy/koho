@@ -7,7 +7,7 @@ section#shop {
     width: fit-content;
     text-align: center;
     color: var(--c-primary);
-    transform: rotate(-5deg);
+    transform: rotate(-2deg);
     margin-bottom: var(--gutter-l);
   }
   & a.btn {
@@ -24,14 +24,14 @@ section#shop {
       background-color: var(--c-primary-70);
       border-radius: var(--corner);
       border: 2px solid var(--c-primary);
-      transform: rotate3d(1, -1, 0, 333deg);
+      transform: rotate3d(1, -1, 0, 345deg);
       transition-property: box-shadow, transform;
       transition-duration: var(--duration);
       transition-timing-function: var(--easing);
 
       &:hover {
         box-shadow: 4px 5px var(--c-primary);
-        transform: rotate3d(1, -1, 0, 333deg) translate3d(-4px, -5px, 0);
+        transform: rotate3d(1, -1, 0, 345deg) translate3d(-4px, -5px, 0);
       }
         
       & img {

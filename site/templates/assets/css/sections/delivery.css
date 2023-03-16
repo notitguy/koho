@@ -1,0 +1,26 @@
+#delivery article {
+  display: grid;
+  gap: var(--gutter-l);
+
+  & .delivery__card {
+      display: grid;
+      gap: var(--gutter);
+      width: fit-content;
+      margin-top: var(--gutter);
+      padding: var(--gutter-l);
+      background-color: var(--c-bg-80);
+      border: 2px solid var(--c-primary);
+      border-radius: var(--corner);
+
+    & a img {
+      filter: invert(15%) sepia(50%) saturate(3138%) hue-rotate(0deg) brightness(29%) contrast(88%);
+    }
+  }
+}
+
+@media (width > 768px) {
+  #delivery article {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%; /*remove if it is wide enough*/
+  }
+}

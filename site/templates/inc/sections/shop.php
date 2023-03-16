@@ -1,5 +1,7 @@
 <?php namespace ProcessWire;
 
+$iconShop = $assets ."/icons/cart.svg";
+
 $shopBike = $assets ."/images/photos/shop-bike.jpg";
 $shopArt = $assets ."/images/photos/shop-art.jpg";
 $shopChair = $assets ."/images/photos/shop-chair.jpg";
@@ -13,7 +15,7 @@ $shopHelmet = $assets ."/images/photos/shop-helmet.jpg";
       <h2>Exclusive <br>concept store</h2>
       <p>Kohoutek is more than just a restaurant - it is a place where we share our passion.</p>
       <p>All items you find in our restaurant are presented for sale. Visit our online shop and get your favorite piece from Kohoutek!</p>
-      <a href="#" class="btn">Shop online</a>
+      <a href="#" class="btn">Shop online <img src="<?= $iconShop ?>" width="24" height="24" alt=""></a>
     </div>
     <section class="shop__tiles">
       <figure>

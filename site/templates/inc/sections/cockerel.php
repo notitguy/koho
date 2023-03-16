@@ -18,7 +18,7 @@
       </div>
       <p>Each cockerel served weighs approximately 500 grams and is the perfect serving size for one person.</p>
     </div>
-    <div class="cockerel-media">
+    <div class="cockerel-media frame">
       <img src="<?= $cockerelImage ?>" alt="">
     </div>
     <!-- <div style="padding:56.25% 0 0 0;position:relative;">

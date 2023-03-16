@@ -25,6 +25,7 @@
 			<?php include($sections ."cockerel.php"); ?>
 			<?php include($sections ."shop.php"); ?>
 			<?php include($sections ."reviews.php"); ?>
+			<?php include($sections ."delivery.php"); ?>
 			<?php include($sections ."footer.php"); ?>
 
 	</body>

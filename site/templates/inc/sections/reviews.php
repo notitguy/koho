@@ -1,9 +1,9 @@
 <?php namespace ProcessWire;
 
-$star = $assets ."/icons/star.svg";
+$iconStar = $assets ."/icons/star.svg";
 
 ?>
-<div class="border --90"><div></div></div>
+<div class="border --80 gradient"><div></div></div>
 <section>
   <article class="reviews container">
     <div class="body">
