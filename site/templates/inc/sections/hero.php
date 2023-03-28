@@ -2,7 +2,7 @@
 
 ?>
 <section class="hero">
-  <div class="container --small">
+  <div class="body container --small">
     <h1>Delicious Italian cockerel</h1>
     <div class="cta">
       <a href="#" class="btn --primary">Delivery
