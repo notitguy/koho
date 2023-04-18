@@ -131,6 +131,10 @@ ul:not(.list) {
 }
 a {
   text-decoration: none;
+
+  &:not(.btn):hover {
+    text-decoration: underline;
+  }
 }
 /* img {
   border-radius: var(--corner-inner);
@@ -175,6 +179,9 @@ main > section {
   &.--90 > div, &.--90 + section {
     background-color: var(--c-bg-90);
   }
+  &.--dark > div {
+    background-color: var(--c-bg-dark);
+  }
   & + section {
     padding-block: 5rem 10rem;
     margin-bottom: -10rem;
@@ -189,7 +196,7 @@ main > section {
     }
 
     & + section {
-      padding-block: 5rem 9rem;
+      padding-block: 4rem 9rem;
       margin-bottom: -10rem;
     }
   }
@@ -213,4 +220,13 @@ main > section {
     top: 8px; left: 8px;
     border: 3px solid var(--c-primary-50);
   }
+}
+
+.socials, .location {
+  display: flex;
+  gap: var(--gutter-s);
+  align-items: center;
+}
+.socials {
+  gap: var(--gutter);
 }

@@ -1,4 +1,8 @@
 header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  padding-top: 1rem;
 
   & .container {
     display: grid;
@@ -17,6 +21,11 @@ header {
     &.mobile {
       margin-left: auto;
       grid-column: 3;
+      /*floating*/
+      background-color: var(--c-bg-dark);
+      height: 5rem;
+      padding-inline: 1rem;
+      border-radius: 3rem;
     }
 
     & > a {
@@ -25,7 +34,7 @@ header {
   }
   
   & .logo {
-    margin: 1rem auto;
+    margin-inline: auto;
   }
 }
 @media (width < 768px) {

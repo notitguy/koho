@@ -6,7 +6,7 @@
   /* padding: 0; for video */
   
   & > .about__video {
-    padding-bottom: var(--gutter);
+    max-width: 50rem;;
     border-radius: var(--corner);
     overflow: hidden; /*for rounded corners*/
   }
@@ -51,18 +51,18 @@
       }
 
       &:nth-child(1) {
-        transform: rotate3d(1,1,1,-1deg);
+        transform: rotate(-1deg);
         grid-row: span 2;
       }
       &:nth-child(2) {
-        transform: rotate3d(1,1,1,-2deg);
+        transform: rotate(-2deg);
       }
       /* &:nth-child(3) {
         transform: rotate(-2deg);
       } */
       &:nth-child(3) {
         grid-column: 2;
-        transform: rotate3d(1,1,1,2deg);
+        transform: rotate(2deg);
         display: grid;
         place-items: center;
 

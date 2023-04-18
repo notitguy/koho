@@ -91,7 +91,6 @@ body.home .eventlist {
     color: #666;
   }
   & h3 {
-    color: var(--c-accent);
-    /* color: var(--c-primary); */
+    color: #444;
   }
 }

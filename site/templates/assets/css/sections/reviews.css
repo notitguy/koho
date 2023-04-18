@@ -1,5 +1,6 @@
 .reviews {
   display: grid;
+  overflow-x: clip;
 
   & .reviews__slider {
     width: 270px;
@@ -75,5 +76,11 @@
 @media (width > 768px) {
   .reviews {
     grid-template-columns: 2fr 4fr;
+  }
+}
+
+@media (width < 768px) {
+  .reviews__slider {
+    margin-top: var(--gutter);
   }
 }

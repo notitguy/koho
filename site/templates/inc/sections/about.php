@@ -9,11 +9,12 @@ $galleryIcon = $assets ."/icons/gallery.svg";
 
 <div class="border --80"><div></div></div>
 <section>
-  <div class="banner container">This is a place for a<span>BANNER/FLYER</span>It won't show, if there is no banner.</div>
+  <!-- <div class="banner container">This is a place for a<span>BANNER/FLYER</span>It won't show, if there is no banner.</div> -->
+  <?php include ($components ."menu.php") ?>
   <?php include ($components ."running-text.php") ?>
   <?php include ($components ."eventlist-home.php") ?>
   <article id="about" class="container">
-    <div class="about__video" style="padding:56.25% 0 0 0;position:relative;">
+    <div class="about__video" style="padding:50vmin 50% 0 50%;position:relative;">
       <iframe src="https://player.vimeo.com/video/772986451?h=5ed232e1ec&autoplay=1&loop=1&byline=0&portrait=0&muted=1&controls=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
       <script src="https://player.vimeo.com/api/player.js" async defer></script>
     </div>

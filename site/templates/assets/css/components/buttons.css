@@ -3,6 +3,7 @@ a.btn {
   position: relative;
   top: 0; left: 0;
   display: block;
+  width: fit-content;
   padding: 0.7rem 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -37,7 +38,6 @@ a.btn {
     transition-timing-function: var(--easing);
     position: absolute;
     top: 4px; left: 4px;
-    z-index: -1;
   }
 
   &:hover {
@@ -71,6 +71,7 @@ a.btn {
       border: 1px solid var(--c-primary-70);
       top: 5px; left: 5px;
       box-shadow: none;
+      z-index: -1;
     }
     &:hover::after {
       top: 7px; left: 7px;
@@ -87,11 +88,6 @@ a.btn {
 @media (width < 768px) {
   a.btn {
     padding: 0.6rem 1rem;
-  }
-}
-@media (width > 768px) {
-  a.btn {
-    width: fit-content;
   }
 }
 
