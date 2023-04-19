@@ -100,3 +100,44 @@ reviewText.forEach(el => {
 
   })
 });
+
+// Mobile nav
+const mobileNav = document.querySelectorAll('nav.mobile, .quick-nav');
+const floatingNav = document.querySelector('nav.mobile');
+const menuElements = document.querySelectorAll('.nav-icon, .quick-nav a, .overlay');
+const overlay = document.querySelector('.overlay');
+
+menuElements.forEach(item => {
+  item.addEventListener('click', () => {
+    for (const el of mobileNav) {
+      el.classList.toggle('--open');
+    }
+    overlay.classList.toggle('--blur');
+  })
+})
+window.addEventListener('click', function(event) {
+  if (!floatingNav.contains(event.target)) {
+    mobileNav.forEach(el => {
+      el.classList.remove('--open');
+    });
+    overlay.classList.remove('--blur');
+  }
+})
+
+// give class to header on scroll
+const header = document.querySelector('header');
+
+window.onscroll = function() {
+
+  if ( this.scrollY > 50 ) {
+    header.classList.add('--scrolled');
+  }
+  else {
+    header.classList.remove('--scrolled');
+  }
+  this.oldScroll = this.scrollY;
+  
+}
+
+
+

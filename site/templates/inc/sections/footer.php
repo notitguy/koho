@@ -67,6 +67,8 @@ $vinpivo = $assets ."/images/partners/vp-282.png";
   </section>
 </footer>
 
+<div class="overlay"></div>
+
 <?php // https://medium.com/@erikritter/css-snippets-add-a-texture-overlay-to-an-entire-webpage-b0bfdfd02c45 ?>
 <div class="pattern"></div>
 <?php // https://stackoverflow.com/questions/14446677/how-to-make-3-corner-rounded-triangle-in-css/ ?>

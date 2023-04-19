@@ -93,8 +93,8 @@ a.btn {
 
 @keyframes shake {
   0% { transform: rotate(0deg); }
-  25% { transform: rotate(7deg) translate3d(0,1px,0); }
+  25% { transform: rotate(7deg) translateY(1px) }
   50% { transform: rotate(0deg); }
-  75% { transform: rotate(-7deg) translate3d(0,1px,0); }
+  75% { transform: rotate(-7deg) translateY(1px) }
   100% { transform: rotate(0deg); }
 }

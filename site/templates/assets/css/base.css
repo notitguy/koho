@@ -67,6 +67,7 @@
   --duration-fast: 0.07s;
   --duration: 0.2s;
   --easing: cubic-bezier(0.16, 1, 0.3, 1);
+  --easing-elastic: cubic-bezier(0.86, 0, 0.07, 1);
 }
 @media (width < 768px) {
   :root {
@@ -196,8 +197,8 @@ main > section {
     }
 
     & + section {
-      padding-block: 4rem 9rem;
-      margin-bottom: -10rem;
+      /* padding-block: 4rem 9rem; */
+      /* margin-bottom: -10rem; */
     }
   }
 }

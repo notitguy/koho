@@ -3,6 +3,7 @@
   border-block: 2px dashed var(--c-primary);
   background-color: #e2cda2;
   overflow: hidden;
+  display: none;
   /* transform: rotate3d(0, 0, 1, 359deg); causes flick*/
 }
 .running-text {
@@ -38,10 +39,10 @@
 }
 @keyframes marquee {
   0% {
-    transform: translate3d(0);
+    transform: translate(0);
   }
   100% {
-    transform: translate3d(-50%,0,0);
+    transform: translate(-50%);
   }
 }
 @keyframes peanuts {

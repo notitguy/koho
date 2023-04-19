@@ -6,7 +6,7 @@ header {
 
   & .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   & a {
@@ -19,13 +19,20 @@ header {
     gap: var(--gutter);
 
     &.mobile {
+      flex-wrap: wrap;
       margin-left: auto;
       grid-column: 3;
       /*floating*/
-      background-color: var(--c-bg-dark);
+      position: relative;
+      width: max-content;
       height: 5rem;
-      padding-inline: 1rem;
-      border-radius: 3rem;
+      padding-inline: var(--gutter);
+      background-color: var(--c-bg-dark);
+      border-radius: var(--corner);
+      transition: all 0.8s ease-in-out;
+      
+      &.--open {
+      }
     }
 
     & > a {
@@ -36,48 +43,144 @@ header {
   & .logo {
     margin-inline: auto;
   }
+  & .mobile-logo {
+    padding: 0;
+  }
+
 }
+
+.overlay {
+  position: absolute;
+  top: 0; right: 0;
+  width: 100%; height: 100%;
+  /* backdrop-filter: blur(1px); */
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.6s var(--easing-elastic);
+
+  &.--blur {
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+/* Quick nav */
+.quick-nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0; right: 0;
+  background: var(--c-bg-dark);
+  border-radius: var(--corner);
+  padding: 5rem 0 2rem 2rem;
+  z-index: -1;
+  /* clip-path: circle(29px at calc(var(--nav-width) - 5vw - var(--iconSize) / 2) calc(5vh + var(--iconSize) / 2)); */
+  clip-path: inset(0 0 100% 0);
+  transition: all 0.6s var(--easing-elastic); 
+
+  & a {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.6s var(--easing-elastic);
+    transition-delay: calc(0.055s * var(--d));
+  }
+
+  &.--open {
+    /* clip-path: circle(75% at 175px 50vh); */
+    clip-path: inset(0 -10% -10% -10%);
+    box-shadow: 0px 5px 15px hsl(0deg 0% 0% / 40%);
+
+    & a {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Burger */
+.nav-icon {
+  width: 2.1rem;
+  height: 1.5rem;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s var(--easing-elastic);
+  cursor: pointer;
+
+  & span {
+    display: block;
+    position: absolute;
+    height: 0.2rem;
+    width: 100%;
+    background: var(--c-primary-50);
+    border-radius: var(--corner);
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: all 0.6s var(--easing-elastic);
+
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(2), &:nth-child(3) {
+      top: 45%;
+    }
+    &:nth-child(4) {
+      top: 90%;
+    }
+  }
+}
+nav.mobile.--open .nav-icon span {
+  &:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  &:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  &:nth-child(1), &:nth-child(4) {
+    top: 45%;
+    width: 0;
+    left: 50%;
+  }
+}
+
+.logo img, .mobile-logo img {
+  filter: invert(86%) sepia(22%) saturate(829%) hue-rotate(329deg) brightness(91%) contrast(88%);
+  /* filter: invert(74%) sepia(72%) saturate(213%) hue-rotate(347deg) brightness(93%) contrast(85%); */
+}
+
 @media (width < 768px) {
+  header {
+    & .container {
+      justify-items: center;
+    }
+  }
   nav.desktop, a.logo {
     display: none;
   }
 }
-/* .nav-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 2.5rem;
-  height: 0.8rem;
-  cursor: pointer;
+@media (width > 768px) {
 
-  &::before, &::after {
-    content: '';
-    display: block;
-    background-color: var(--c-primary-70);
-    height: 3px;
-  }
-  &:not(:hover)::after {
-    width: 60%;
-  }
-} */
-.nav-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  color: var(--c-primary-50);
-  font-family: var(--font-heading);
-
-  & img {
-    transform: rotate(180deg);
-
-    &:first-child {
-      transform: rotate(0deg);
+  header {
+    & .container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    & nav.mobile {
+      grid-column: 3;
+      margin-left: auto;
     }
   }
-}
-.logo img {
-  /* filter: invert(86%) sepia(30%) saturate(261%) hue-rotate(358deg) brightness(97%) contrast(88%); */
-  filter: invert(74%) sepia(72%) saturate(213%) hue-rotate(347deg) brightness(93%) contrast(85%);
+  .mobile-logo {
+    display: none;
+  }
+  header.--scrolled {
+    & nav.desktop, & a.logo{
+      opacity: 0;
+    }
+    & .mobile-logo {
+      display: block;
+    }
+  }
 }
