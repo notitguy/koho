@@ -22,32 +22,11 @@ footer {
     color: var(--c-primary-80);
     font-size: clamp(1.4rem, 4vw, 2rem);
   }
-  .opening-hours {
-    width: fit-content;
-
-    & li {
-      display: flex;
-      justify-content: space-between;
-      gap: var(--gutter-s);
-    }
-  }
+  
   & a {
     color: var(--c-primary-70);
   }
-  & address {
-    font-style: normal;
-    display: grid;
-    gap: var(--gutter);
-    margin-block: var(--gutter);
 
-    & a {
-      display: block;
-    }
-
-    & .location img {
-      filter: brightness(0) saturate(100%) invert(83%) sepia(15%) saturate(792%) hue-rotate(349deg) brightness(85%) contrast(103%);
-    }
-  }
   & form, & .press {
     display: flex;
     flex-direction: column;

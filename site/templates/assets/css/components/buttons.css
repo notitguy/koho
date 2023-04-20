@@ -88,6 +88,10 @@ a.btn {
 @media (width < 768px) {
   a.btn {
     padding: 0.6rem 1rem;
+
+    &:has(img) {
+      padding: 0.6rem 1rem 0.6rem 1.2rem;
+    }
   }
 }
 

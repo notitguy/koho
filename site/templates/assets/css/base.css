@@ -133,7 +133,7 @@ ul:not(.list) {
 a {
   text-decoration: none;
 
-  &:not(.btn):hover {
+  &:not([class]):hover {
     text-decoration: underline;
   }
 }
@@ -223,6 +223,31 @@ main > section {
   }
 }
 
+address {
+  font-style: normal;
+  display: grid;
+  gap: var(--gutter-s);
+  margin-block: var(--gutter-s);
+
+  & a {
+    display: block;
+  }
+
+  & .location img {
+    filter: brightness(0) saturate(100%) invert(83%) sepia(15%) saturate(792%) hue-rotate(349deg) brightness(85%) contrast(103%);
+  }
+}
+
+.opening-hours {
+  width: fit-content;
+
+  & li {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gutter-s);
+  }
+}
+
 .socials, .location {
   display: flex;
   gap: var(--gutter-s);
@@ -230,4 +255,5 @@ main > section {
 }
 .socials {
   gap: var(--gutter);
+  margin-top: var(--gutter-s);
 }

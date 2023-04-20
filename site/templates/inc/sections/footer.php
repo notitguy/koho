@@ -1,11 +1,5 @@
 <?php namespace ProcessWire;
 
-$locationIcon = $assets ."/icons/location.svg";
-$instagramIcon = $assets ."/icons/instagram.svg";
-$googleIcon = $assets ."/icons/google.svg";
-$facebookIcon = $assets ."/icons/facebook.svg";
-$tripadvisorIcon = $assets ."/icons/tripadvisor.svg";
-
 $catecho = $assets ."/images/partners/catecho-logo.png";
 $saniplast = $assets ."/images/partners/saniplast_logo.png";
 $somoto = $assets ."/images/partners/somotocz.png";
@@ -28,7 +22,7 @@ $vinpivo = $assets ."/images/partners/vp-282.png";
         <img src="<?= $locationIcon ?>" width="18" alt=""> Slezská 780/49, Praha 3 - Vinohrady
       </a>
       <a href="tel:+420 602 760 996">+420 602 760 996</a>
-      <a href="mailto:info@kohoutekresto.cz" style="margin-top: -1rem;">info@kohoutekresto.cz</a>
+      <a href="mailto:info@kohoutekresto.cz" style="margin-top: -0.5rem;">info@kohoutekresto.cz</a>
       <div class="socials">
         <a href="https://www.instagram.com/kohoutek_resto/" target="_blank" rel="nofollow"><img width="18" height="18" src="<?= $instagramIcon ?>" alt=""></a>
         <a href="https://www.facebook.com/KohoutekResto/" target="_blank" rel="nofollow"><img width="18" height="18" src="<?= $facebookIcon ?>" alt=""></a>

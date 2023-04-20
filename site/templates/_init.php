@@ -14,5 +14,11 @@ $components = $config->paths->templates . "inc/components/";
 
 // Globals
 $logo = $assets ."images/logo.svg";
-$logoResponsive = $assets ."images/logo-responsive.svg";
+$logoResponsive = $assets ."icons/kok.svg";
 $email = "info@kohoutekresto.cz";
+
+$locationIcon = $assets ."/icons/location.svg";
+$instagramIcon = $assets ."/icons/instagram.svg";
+$googleIcon = $assets ."/icons/google.svg";
+$facebookIcon = $assets ."/icons/facebook.svg";
+$tripadvisorIcon = $assets ."/icons/tripadvisor.svg";
