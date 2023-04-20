@@ -8,7 +8,7 @@ $deliveryIcon =  $assets ."icons/delivery-car.svg";
   <div class="body container --small">
     <h1>Delicious Italian cockerel</h1>
     <div class="cta">
-      <a href="#" class="btn --primary">Free delivery
+      <a href="<?= $orderLink ?>" class="btn --primary" target="_blank" rel="nofollow">Free delivery
         <img src="<?= $bagIcon ?>" width="26" height="26" alt="">
       </a>
       <img src="<?= $deliveryIcon ?>" width="75" height="75" class="car" alt="">

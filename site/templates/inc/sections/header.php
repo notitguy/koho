@@ -13,10 +13,10 @@ $bagIcon =  $assets ."icons/bag.svg";
 <header>
   <div class="container">
     <nav class="desktop">
-      <a href="#"><?= $menu ?></a>
-      <a href="#"><?= $about ?></a>
-      <a href="#"><?= $shop ?></a>
-      <a href="#"><?= $findUs ?></a>
+      <a href="#menu"><?= $menu ?></a>
+      <a href="#about"><?= $about ?></a>
+      <a href="#shop"><?= $shop ?></a>
+      <a href="#footer"><?= $findUs ?></a>
     </nav>
     <a href="<?= $home->url?>" class="logo">
       <img src="<?= $logo ?>" alt="Kohoutek">
@@ -25,7 +25,7 @@ $bagIcon =  $assets ."icons/bag.svg";
       <a href="<?= $home->url?>" class="mobile-logo">
         <img src="<?= $logoResponsive ?>" alt="Kohoutek" width="32">
       </a>
-      <a href="#" class="btn --secondary"><?= $reservation ?></a>
+      <a href="<?= $reservationLink ?>" class="btn --secondary" target="_blank" rel="nofollow"><?= $reservation ?></a>
       <?php include ($components ."language-switcher.php") ?>
       <div class="nav-icon">
         <!-- <img src="<?= $legIcon ?>" width="24" alt=""><img src="<?= $legIcon ?>" width="24" alt=""> -->
@@ -33,12 +33,12 @@ $bagIcon =  $assets ."icons/bag.svg";
       </div>
       <div class="quick-nav">
         <div class="links">
-          <a href="#" style="--d: 0"><?= $menu ?></a>
-          <a href="#" style="--d: 1"><?= $about ?></a>
-          <a href="#" style="--d: 2"><?= $shop ?></a>
-          <a href="#" style="--d: 3"><?= $findUs ?></a>
+          <a href="#menu" style="--d: 0"><?= $menu ?></a>
+          <a href="#about" style="--d: 1"><?= $about ?></a>
+          <a href="#shop" style="--d: 2"><?= $shop ?></a>
+          <a href="#footer" style="--d: 3"><?= $findUs ?></a>
         </div>
-        <a href="" class="btn --primary">Order here
+        <a href="<?= $orderLink ?>" class="btn --primary" target="_blank" rel="nofollow">Order here
           <img src="<?= $bagIcon ?>" width="26" height="26" alt="">
         </a>
         <h3><?= $businessName ?></h3>

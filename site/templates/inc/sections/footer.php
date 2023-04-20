@@ -10,7 +10,7 @@ $vinpivo = $assets ."/images/partners/vp-282.png";
 </main>
 
 <div class="border --dark"><div></div></div>
-<footer class="container">
+<footer class="container" id="footer">
   <section>
     <h2><?= $businessName ?></h2>
     <address>
