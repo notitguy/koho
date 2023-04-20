@@ -43,7 +43,7 @@ $galleryIcon = $assets ."/icons/gallery.svg";
       <a href="#"><img src="<?= $assets ."/images/photos/about1.jpg" ?>" alt="Kohoutek Restaurant"></a>
       <a href="#">
         <img src="<?= $assets ."/images/photos/about3.jpg" ?>" alt="Kohoutek Restaurant">
-        <span>+12</span>
+        <!-- <span>+12</span> -->
       </a>
     </div>
     <!-- <div class="card">

@@ -9,10 +9,13 @@
 
 footer {
   padding-block: 4rem 9rem;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: var(--gutter-l);
   color: var(--c-grey-light);
+
+  & section {
+    flex: 0 1 auto;
+  }
 
   & section:not(:first-child) {
     margin-top: var(--gutter-l);
@@ -21,6 +24,7 @@ footer {
   & h2 {
     color: var(--c-primary-80);
     font-size: clamp(1.4rem, 4vw, 2rem);
+    margin-bottom: var(--gutter-s);
   }
   
   & a {
@@ -39,5 +43,11 @@ footer {
     flex-wrap: wrap;
     gap: var(--gutter);
     align-items: center;
+  }
+}
+
+@media (width > 768px) {
+  footer {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -41,17 +41,17 @@ $bagIcon =  $assets ."icons/bag.svg";
         <a href="" class="btn --primary">Order here
           <img src="<?= $bagIcon ?>" width="26" height="26" alt="">
         </a>
-        <h3>Kohoutek Restaurant</h3>
+        <h3><?= $businessName ?></h3>
         <address>
           <ul class="opening-hours">
             <li>Monday: <span>16:30 - 22:00</span></li>
             <li>Tuesday-Sunday: <span>11:00 - 22:00</span></li>
           </ul>
           <a href="https://goo.gl/maps/fcWpzhbJtDf5yh3z7" target="_blank" rel="nofollow" class="location">
-            <img src="<?= $locationIcon ?>" width="18" alt=""> Slezská 780/49, Praha 3 - Vinohrady
+            <img src="<?= $locationIcon ?>" width="18" alt=""> <?= $address ?>
           </a>
-          <a href="tel:+420 602 760 996">+420 602 760 996</a>
-          <a href="mailto:info@kohoutekresto.cz" style="margin-top: -0.5rem;">info@kohoutekresto.cz</a>
+          <a href="tel:<?= $phone ?>"><?= $phone ?></a>
+          <a href="mailto:<?= $email ?>" style="margin-top: -0.5rem;"><?= $email ?></a>
           <div class="socials">
             <a href="https://www.instagram.com/kohoutek_resto/" target="_blank" rel="nofollow"><img width="18" height="18" src="<?= $instagramIcon ?>" alt=""></a>
             <a href="https://www.facebook.com/KohoutekResto/" target="_blank" rel="nofollow"><img width="18" height="18" src="<?= $facebookIcon ?>" alt=""></a>

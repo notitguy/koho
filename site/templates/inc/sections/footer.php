@@ -12,17 +12,17 @@ $vinpivo = $assets ."/images/partners/vp-282.png";
 <div class="border --dark"><div></div></div>
 <footer class="container">
   <section>
-    <h2>Kohoutek Restaurant</h2>
+    <h2><?= $businessName ?></h2>
     <address>
       <ul class="opening-hours">
         <li>Monday: <span>16:30 - 22:00</span></li>
         <li>Tuesday-Sunday: <span>11:00 - 22:00</span></li>
       </ul>
       <a href="https://goo.gl/maps/fcWpzhbJtDf5yh3z7" target="_blank" rel="nofollow" class="location">
-        <img src="<?= $locationIcon ?>" width="18" alt=""> Slezská 780/49, Praha 3 - Vinohrady
+        <img src="<?= $locationIcon ?>" width="18" alt=""> <?= $address ?>
       </a>
-      <a href="tel:+420 602 760 996">+420 602 760 996</a>
-      <a href="mailto:info@kohoutekresto.cz" style="margin-top: -0.5rem;">info@kohoutekresto.cz</a>
+      <a href="tel:<?= $phone ?>"><?= $phone ?></a>
+      <a href="mailto:<?= $email ?>" style="margin-top: -0.5rem;"><?= $email ?></a>
       <div class="socials">
         <a href="https://www.instagram.com/kohoutek_resto/" target="_blank" rel="nofollow"><img width="18" height="18" src="<?= $instagramIcon ?>" alt=""></a>
         <a href="https://www.facebook.com/KohoutekResto/" target="_blank" rel="nofollow"><img width="18" height="18" src="<?= $facebookIcon ?>" alt=""></a>
@@ -51,7 +51,7 @@ $vinpivo = $assets ."/images/partners/vp-282.png";
     </div>
   </section>
   <section>
-    <h3>Our partners</h3>
+    <h3 style="margin-bottom:var(--gutter-s)">Our partners</h3>
     <div class="partners">
       <a href="http://saniplast.it/en/" target="_blank" rel="nofollow"><img src="<?= $saniplast ?>" width="100" alt=""></a>
       <a href="http://www.cetecho.cz/" target="_blank" rel="nofollow"><img src="<?= $catecho ?>" width="100" alt=""></a>
@@ -69,6 +69,10 @@ $vinpivo = $assets ."/images/partners/vp-282.png";
 <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
   <defs>
     <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 25 -9" result="goo" />
+      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+    </filter>
+    <filter id="goo2"><feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />    
       <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 25 -9" result="goo" />
       <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
     </filter>
