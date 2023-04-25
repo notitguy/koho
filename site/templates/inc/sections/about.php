@@ -24,11 +24,11 @@ $galleryIcon = $assets ."/icons/gallery.svg";
       <p>It’s our mission to serve only the best quality Italian cockerel.</p>
       <p>Give it a taste and let us know what you think!</p>
       <div class="tiles">
-        <a href="#" class="btn">
+        <a href="https://www.kohoutekresto.cz/wp-content/uploads/2022/07/menu-en.pdf" target="_blank" class="btn">
           <img src="<?= $menuIcon ?>" width="32" height="32" alt="">
           Menu
         </a>
-        <a href="#" class="btn">
+        <a href="#footer" class="btn">
           <img src="<?= $locationIcon ?>" width="32" height="32" alt="">
           Find us
         </a>
@@ -38,27 +38,27 @@ $galleryIcon = $assets ."/icons/gallery.svg";
         </a> -->
       </div>
       </div>
-    <div class="gallery">
-      <a href="#"><img src="<?= $assets ."/images/photos/about5.jpg" ?>" width="388" alt="Kohoutek Restaurant"></a>
-      <a href="#"><img src="<?= $assets ."/images/photos/about1.jpg" ?>" alt="Kohoutek Restaurant"></a>
-      <a href="#">
-        <img src="<?= $assets ."/images/photos/about3.jpg" ?>" alt="Kohoutek Restaurant">
+    <div class="gallery pswp-gallery" id="gallery--home">
+      <a href="<?= $assets ."/images/photos/about5--large.jpg" ?>"
+      data-pswp-width="1333" 
+      data-pswp-height="2000"
+      target="_blank">
+        <div><img src="<?= $assets ."/images/photos/about5.jpg" ?>" width="388" alt="Kohoutek Restaurant"></div>
+      </a>
+      <a href="<?= $assets ."/images/photos/about1--large.jpg" ?>"
+        data-pswp-width="1333" 
+        data-pswp-height="2000"
+        target="_blank">
+      <div><img src="<?= $assets ."/images/photos/about1.jpg" ?>" alt="Kohoutek Restaurant"></div>
+    </a>
+      <a href="<?= $assets ."/images/photos/about3--large.jpg" ?>"
+        data-pswp-width="2000" 
+        data-pswp-height="1333"
+        target="_blank">
+        <div><img src="<?= $assets ."/images/photos/about3.jpg" ?>" alt="Kohoutek Restaurant"></div>
         <!-- <span>+12</span> -->
       </a>
     </div>
-    <!-- <div class="card">
-      <img src="<?= $assets ."/images/photos/about1.jpg" ?>" alt="Kohoutek Restaurant">
-      <h3>Dipisicing elit</h3>
-      <p>Amet consectetur adipisicing elit. At excepturi perferendis ab recusandae, iure possimus fugit voluptatum, deserunt ratione consequuntur numquam est sapiente voluptates veniam ullam, nisi sunt. Totam, quam.</p>
-    </div>
-    <div class="card">
-    <img src="<?= $assets ."/images/photos/about3.jpg" ?>" alt="Kohoutek Restaurant">
-      <h3>Quod explicabo</h3>
-      <p>Consectetur adipisicing elit. Dolorum inventore ipsam quod explicabo molestias accusantium. Itaque similique maiores commodi debitis nulla quam placeat! Harum dolore laudantium praesentium quidem aliquam. Quo?</p>
-    </div> -->
-    <!-- <div class="card">
-      <p>Magnam exercitationem quidem voluptatem suscipit laborum hic! Deleniti dolores debitis ut explicabo quisquam culpa itaque recusandae, saepe error rerum officia, earum odio.</p>
-    </div> -->
 
   </article>
 </section>

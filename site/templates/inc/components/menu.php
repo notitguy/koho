@@ -4,7 +4,7 @@
     Choose your menu
     <img src="<?= $assets ."/icons/splash-right.svg" ?>" width="32" height="55" alt="">
   </h3>
-  <a href="">
+  <a href="https://www.kohoutekresto.cz/wp-content/uploads/2022/07/menu-en.pdf" target="_blank">
     <img src="<?= $assets ."/images/photos/menu1.jpg" ?>" alt="">
     <!-- <span></span> -->
     <div class="body">
@@ -12,7 +12,7 @@
       <i>Open</i>
     </div>
   </a>
-  <a href="">
+  <a href="https://www.kohoutekresto.cz/wp-content/uploads/2023/04/MENU-LUNCH-23-rev01-GB-CZ-VERTICAL-UNIQUE-RASTER.pdf" target="_blank">
     <img src="<?= $assets ."/images/photos/menu2.jpg" ?>" alt="">
     <!-- <span></span> -->
     <div class="body">

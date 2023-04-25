@@ -139,5 +139,21 @@ window.onscroll = function() {
   
 }
 
+// Gallery
+
+// Include Lightbox 
+import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
+
+const lightbox = new PhotoSwipeLightbox({
+  // may select multiple "galleries"
+  gallery: '#gallery--home',
+
+  // Elements within gallery (slides)
+  children: 'a',
+
+  // setup PhotoSwipe Core dynamic import
+  pswpModule: () => import('photoswipe')
+});
+lightbox.init();
 
 

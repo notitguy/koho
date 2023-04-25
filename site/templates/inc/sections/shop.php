@@ -20,29 +20,29 @@ $shopHelmet = $assets ."/images/photos/shop-helmet.jpg";
     </div>
     <section class="shop__tiles">
       <figure>
-        <a href="" class="shop__product">
-          <img src="<?= $shopBike ?>" width="266" height="267" alt="Shop Kohoutek">
-          <figcaption>Motorcycles</figcaption>
-        </a>
-        </figure>
-        <figure>
-          <a href="" class="shop__product">
-            <img src="<?= $shopArt ?>" width="267" height="267" alt="Shop Kohoutek">
-            <figcaption>Art</figcaption>
-          </a>
-        </figure>
-        <figure>
-        <a href="" class="shop__product">
-          <img src="<?= $shopChair ?>" width="267" height="267" alt="Shop Kohoutek">
-          <figcaption>Furniture</figcaption>
-        </a>
+      <!-- <a href="" class="shop__product"> -->
+        <img src="<?= $shopBike ?>" width="266" height="267" alt="Shop Kohoutek">
+        <figcaption>Motorcycles</figcaption>
+      <!-- </a> -->
       </figure>
       <figure>
-        <a href="" class="shop__product">
-          <img src="<?= $shopHelmet ?>" width="266" height="267" alt="Shop Kohoutek">
-          <figcaption>Accessoires</figcaption>
-        </a>
-        </figure>
+        <!-- <a href="" class="shop__product"> -->
+          <img src="<?= $shopArt ?>" width="267" height="267" alt="Shop Kohoutek">
+          <figcaption>Art</figcaption>
+        <!-- </a> -->
+      </figure>
+      <figure>
+      <!-- <a href="" class="shop__product"> -->
+        <img src="<?= $shopChair ?>" width="267" height="267" alt="Shop Kohoutek">
+        <figcaption>Furniture</figcaption>
+      <!-- </a> -->
+      </figure>
+      <figure>
+      <!-- <a href="" class="shop__product"> -->
+        <img src="<?= $shopHelmet ?>" width="266" height="267" alt="Shop Kohoutek">
+        <figcaption>Accessoires</figcaption>
+      <!-- </a> -->
+      </figure>
     </section>
   </article>
 </section>

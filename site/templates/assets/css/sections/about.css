@@ -44,6 +44,11 @@
       transition: transform var(--duration) var(--easing);
       text-decoration: none;
 
+      &:not(:first-child) div {
+        max-height: 200px;
+        overflow: hidden;
+      }
+
       & img {
         /* border-radius: var(--corner-s); */
         /* border: 1px solid var(--c-primary-50); */

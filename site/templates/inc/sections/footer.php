@@ -5,6 +5,8 @@ $saniplast = $assets ."/images/partners/saniplast_logo.png";
 $somoto = $assets ."/images/partners/somotocz.png";
 $vinpivo = $assets ."/images/partners/vp-282.png";
 
+$chevronIcon = $assets ."/icons/chevron-down.svg";
+
 ?>
 
 </main>
@@ -39,7 +41,8 @@ $vinpivo = $assets ."/images/partners/vp-282.png";
     <p>Get notified about our events and offers.</p>
     <form action="">
       <input type="text" placeholder="Email">
-      <span><input type="checkbox" name="checkbox"> I agree to terms and conditions.</span>
+      <button><img src="<?= $chevronIcon ?>" alt="" width="24" height="24" ></button>
+      <!-- <span><input type="checkbox" name="checkbox"> I agree to terms and conditions.</span> -->
     </form>
     <h3 style="margin-top:var(--gutter);margin-bottom:var(--gutter-s)">Press about us</h3>
     <div class="press">

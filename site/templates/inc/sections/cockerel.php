@@ -1,5 +1,6 @@
 <?php namespace ProcessWire;
   $cockerelImage = $assets ."images/photos/cockerel.jpg";
+  $alpsImage = $assets ."images/photos/alps.jpg";
 ?>
 
 <div class="border --90"><div></div></div>
@@ -10,6 +11,7 @@
       <h3>What even is a cockerel?</h3>
       <p>While a rooster is an adult male bird, a cockerel is a younger male (a chicken is a lady bird). It is an Italian specialty.</p>
       <h3>It's organic!</h3>
+      <img src="<?= $alpsImage ?>" width="400" height="166" alt="" style="margin-top: var(--gutter-s);" >
       <p>The cockerel you find at our restaurant comes from the Italian Alps. They are sustainably-raised in large spaces, with mountain air and clean water, making them 100% BIO.</p>
       <div class="flavours">
         <img src="<?= $assets ."icons/flavour-original.svg" ?>" width="64" alt="">
