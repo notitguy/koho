@@ -11,12 +11,12 @@
       <h3>What even is a cockerel?</h3>
       <p>While a rooster is an adult male bird, a cockerel is a younger male (a chicken is a lady bird). It is an Italian specialty.</p>
       <h3>It's organic!</h3>
-      <img src="<?= $alpsImage ?>" width="400" height="166" alt="" style="margin-top: var(--gutter-s);" >
+      <img src="<?= $alpsImage ?>" width="400" alt="" style="margin-top: var(--gutter-s);" >
       <p>The cockerel you find at our restaurant comes from the Italian Alps. They are sustainably-raised in large spaces, with mountain air and clean water, making them 100% BIO.</p>
       <div class="flavours">
-        <img src="<?= $assets ."icons/flavour-original.svg" ?>" width="64" alt="">
-        <img src="<?= $assets ."icons/flavour-spicy.svg" ?>" width="64" alt="">
-        <img src="<?= $assets ."icons/flavour-bbq.svg" ?>" width="64" alt="">
+        <img src="<?= $assets ."icons/flavour-original.svg" ?>" width="64" height="65" alt="">
+        <img src="<?= $assets ."icons/flavour-spicy.svg" ?>" width="64" height="60" alt="">
+        <img src="<?= $assets ."icons/flavour-bbq.svg" ?>" width="64" height="56" alt="">
       </div>
       <p>Each cockerel served weighs approximately 500 grams and is the perfect serving size for one person.</p>
     </div>

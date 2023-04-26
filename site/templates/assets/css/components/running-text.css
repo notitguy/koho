@@ -31,7 +31,10 @@
     gap: var(--gutter-l);
 
     &::after {
-      content: url(../../icons/peanut.svg);
+      content: '';
+      background-image: url(../../images/logo-responsive.svg);
+      background-size: 100% 100%;
+      width: 18px;
       display: inline-block;
       /* animation: peanuts 5s linear infinite; */
     }

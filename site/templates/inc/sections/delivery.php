@@ -15,7 +15,7 @@ $deliveryImage = $assets ."/images/photos/delivery.jpg";
           <li>- Free delivery within Prague 3</li>
           <li>- Another deal</li>
         </ul>
-        <a href="#" class="btn">Order now <img src="<?= $iconBag ?>" alt=""></a>
+        <a href="<?= $orderLink ?>" class="btn" target="_blank" rel="nofollow" style="margin-top:var(--gutter-s)">Order now <img src="<?= $iconBag ?>" alt=""></a>
       </div>
     </div>
     <div class="delivery-media frame">

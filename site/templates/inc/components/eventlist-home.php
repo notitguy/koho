@@ -1,7 +1,7 @@
 <section class="eventlist container">
   <div class="eventlist__banner">
     <!-- <img src="<?= $assets ."/images/photos/event.jpg"?>" alt=""> -->
-    <h2>Upcoming events</h2>
+    <h2>Kohoutek events</h2>
     <p>Ducimus similique sit explicabo ipsa minus aut.</p>
     <p>Magnam nemo laboriosam sed, veritatis voluptatibus quibusdam sapiente maiores deleniti voluptatem odit amet, quis distinctio!</p>
     <!-- <a href="#" class="btn">More events

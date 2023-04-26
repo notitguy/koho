@@ -4,8 +4,7 @@
 
   & .delivery__card {
       display: grid;
-      gap: var(--gutter);
-      width: fit-content;
+      gap: var(--gutter-s);
       margin-top: var(--gutter);
       padding: var(--gutter-l);
       background-color: var(--c-bg-80);
@@ -22,5 +21,9 @@
   #delivery article {
     grid-template-columns: repeat(2, 1fr);
     width: 100%; /*remove if it is wide enough*/
+
+    & .delivery__card {
+      width: fit-content;
+    }
   }
 }

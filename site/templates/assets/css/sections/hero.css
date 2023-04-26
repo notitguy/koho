@@ -2,7 +2,7 @@ section.hero {
   /* height: 68vh; */
   row-gap: var(--gutter-l);
   justify-content: space-between;
-  margin-bottom: -7rem;
+  margin-bottom: -4rem;
 
   & .body {
     display: flex;

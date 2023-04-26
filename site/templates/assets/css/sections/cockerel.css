@@ -7,10 +7,10 @@
   & .flavours {
     display: flex;
     align-items: center;
-    gap: var(--gutter);
+    column-gap: var(--gutter);
 
     & img {
-      height: fit-content;
+      /* height: fit-content; */
     }
   }
 

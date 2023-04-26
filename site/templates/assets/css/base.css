@@ -166,7 +166,7 @@ main > section {
   overflow: hidden;
   position: relative; /*for z-index to work*/
   /* z-index: -1; */
-  transform: translateY(70px);
+  transform: translateY(10px);
 
   & > div {
     /* background-color: var(--border-color); */
@@ -183,13 +183,17 @@ main > section {
   &.--90 > div, &.--90 + section {
     background-color: var(--c-bg-90);
   }
-  &.--dark > div {
-    background-color: var(--c-bg-dark);
-    background: linear-gradient(hsl(33 15% 25% / 1) 0%, hsl(15deg 4.44% 17.65%) 100%);
+  &.--dark {
+    transform: translateY(30px);
+      
+    & > div {
+      background-color: var(--c-bg-dark);
+      background: linear-gradient(hsl(33 15% 25% / 1) 0%, hsl(15deg 4.44% 17.65%) 100%);
+    }
   }
   & + section {
-    padding-block: 5rem 10rem;
-    margin-bottom: -10rem;
+    padding-block: 1rem 8rem;
+    margin-bottom: -5rem;
   }
 }
 
@@ -197,7 +201,7 @@ main > section {
   .border {
 
     & > div {
-      height: 100px;
+      height: 60px;
     }
 
     & + section {
