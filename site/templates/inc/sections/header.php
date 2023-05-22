@@ -1,21 +1,19 @@
 <?php namespace ProcessWire;
 
-$about = _x('Our story', 'header');
-$menu = _x('Menu', 'header');
-$shop = _x('Shop', 'header');
-$findUs = _x('Find us', 'header');
-$reservation = _x('Reservation', 'header');
-
 $legIcon = $assets. "icons/leg.svg";
 $bagIcon =  $assets ."icons/bag.svg";
 ?>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8CZBP2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <header>
   <div class="container">
     <nav class="desktop">
-      <a href="#menu"><?= $menu ?></a>
+      <a href="#menu"><?= $menuWord ?></a>
       <a href="#about"><?= $about ?></a>
-      <a href="#shop"><?= $shop ?></a>
+      <!-- <a href="#shop"><?= $shop ?></a> -->
       <a href="#footer"><?= $findUs ?></a>
     </nav>
     <a href="<?= $home->url?>" class="logo">
@@ -26,26 +24,26 @@ $bagIcon =  $assets ."icons/bag.svg";
         <img src="<?= $logoResponsive ?>" alt="Kohoutek" width="32">
       </a>
       <a href="<?= $reservationLink ?>" class="btn --secondary" target="_blank" rel="nofollow"><?= $reservation ?></a>
-      <?php include ($components ."language-switcher.php") ?>
+      <?php //include ($components ."language-switcher.php") ?>
       <div class="nav-icon">
         <!-- <img src="<?= $legIcon ?>" width="24" alt=""><img src="<?= $legIcon ?>" width="24" alt=""> -->
         <span></span> <span></span> <span></span> <span></span>
       </div>
       <div class="quick-nav">
         <div class="links">
-          <a href="#menu" style="--d: 0"><?= $menu ?></a>
+          <a href="#menu" style="--d: 0"><?= $menuWord ?></a>
           <a href="#about" style="--d: 1"><?= $about ?></a>
-          <a href="#shop" style="--d: 2"><?= $shop ?></a>
+          <!-- <a href="#shop" style="--d: 2"><?= $shop ?></a> -->
           <a href="#footer" style="--d: 3"><?= $findUs ?></a>
         </div>
-        <a href="<?= $orderLink ?>" class="btn --primary" target="_blank" rel="nofollow">Order here
+        <a href="<?= $orderLink ?>" class="btn --primary" target="_blank" rel="nofollow">Objednat
           <img src="<?= $bagIcon ?>" width="26" height="26" alt="">
         </a>
         <h3><?= $businessName ?></h3>
         <address>
           <ul class="opening-hours">
-            <li>Monday: <span>16:30 - 22:00</span></li>
-            <li>Tuesday-Sunday: <span>11:00 - 22:00</span></li>
+            <li>Pondělí: <span>16:30 - 22:00</span></li>
+            <li>Úterý-Neděle: <span>11:00 - 22:00</span></li>
           </ul>
           <a href="https://goo.gl/maps/fcWpzhbJtDf5yh3z7" target="_blank" rel="nofollow" class="location">
             <img src="<?= $locationIcon ?>" width="18" alt=""> <?= $address ?>
@@ -63,4 +61,3 @@ $bagIcon =  $assets ."icons/bag.svg";
     </nav>
   </div>
 </header>
-<main>

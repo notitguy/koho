@@ -11,26 +11,24 @@ $galleryIcon = $assets ."/icons/gallery.svg";
 <section>
   <!-- <div class="banner container">This is a place for a<span>BANNER/FLYER</span>It won't show, if there is no banner.</div> -->
   <?php include ($components ."menu.php") ?>
-  <?php include ($components ."running-text.php") ?>
-  <?php include ($components ."eventlist-home.php") ?>
+  <?php // include ($components ."running-text.php") ?>
+  <?php //include ($components ."eventlist-home.php") ?>
   <article id="about" class="container">
     <div class="about__video" style="padding:50vmin 50% 0 50%;position:relative;">
       <iframe src="https://player.vimeo.com/video/772986451?h=5ed232e1ec&autoplay=1&loop=1&byline=0&portrait=0&muted=1&controls=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
       <script src="https://player.vimeo.com/api/player.js" async defer></script>
     </div>
     <div class="about__body">
-      <h2>We are Kohoutek!</h2>
-      <p>We are the first restaurant in Czech republic to bring young rooster - an Italian specialty. Kohoutek is also a concept store restaurant - all items you see inside is available to purchase. <a href="#">See our online shop.</a></p>
-      <p>It’s our mission to serve only the best quality Italian cockerel.</p>
-      <p>Give it a taste and let us know what you think!</p>
+      <h2><?= $page->heading_about ?></h2>
+      <?= $page->body_about ?>
       <div class="tiles">
-        <a href="https://www.kohoutekresto.cz/wp-content/uploads/2022/07/menu-en.pdf" target="_blank" class="btn">
+        <a href="https://www.kohoutekresto.cz/site/assets/files/1027/menu-cz.pdf" target="_blank" class="btn">
           <img src="<?= $menuIcon ?>" width="32" height="32" alt="">
           Menu
         </a>
         <a href="#footer" class="btn">
           <img src="<?= $locationIcon ?>" width="32" height="32" alt="">
-          Find us
+          <?= $findUs ?>
         </a>
         <!-- <a href="#">
           <img src="<?= $galleryIcon ?>" width="32" height="32" alt="">

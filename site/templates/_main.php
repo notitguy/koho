@@ -19,14 +19,7 @@
 	<?php include($sections ."_head.php"); ?>
 	<body class="<?= $page->template->name ?>">
 		<?php include($sections ."header.php"); ?>
-
-			<?php include($sections ."hero.php"); ?>
-			<?php include($sections ."about.php"); ?>
-			<?php include($sections ."cockerel.php"); ?>
-			<?php include($sections ."shop.php"); ?>
-			<?php include($sections ."reviews.php"); ?>
-			<?php include($sections ."delivery.php"); ?>
-			<?php include($sections ."footer.php"); ?>
-
+		<main pw-id="content"></main>
+		<?php include($sections ."footer.php"); ?>
 	</body>
 </html>

@@ -1,23 +1,16 @@
 <section id="menu" class="container">
   <h3>
     <img src="<?= $assets ."/icons/splash-left.svg" ?>" width="32" height="60" alt="">
-    Choose your menu
+    <?= $menuTitle ?>
     <img src="<?= $assets ."/icons/splash-right.svg" ?>" width="32" height="55" alt="">
   </h3>
-  <a href="https://www.kohoutekresto.cz/wp-content/uploads/2022/07/menu-en.pdf" target="_blank">
-    <img src="<?= $assets ."/images/photos/menu1.jpg" ?>" alt="">
-    <!-- <span></span> -->
-    <div class="body">
-      <h2>Menu</h2>
-      <i>Open</i>
-    </div>
-  </a>
-  <a href="https://www.kohoutekresto.cz/wp-content/uploads/2023/04/MENU-LUNCH-23-rev01-GB-CZ-VERTICAL-UNIQUE-RASTER.pdf" target="_blank">
-    <img src="<?= $assets ."/images/photos/menu2.jpg" ?>" alt="">
-    <!-- <span></span> -->
-    <div class="body">
-      <h2>Lunch<br>Menu</h2>
-      <i>Open</i>
-    </div>
-  </a>
+  <?php foreach ($page->menu_repeater as $menu) : ?>
+    <a href="<?= $menu->menu_file->url ?>" target="_blank">
+      <img src="<?= $menu->menu_image->url ?>" alt="">
+      <div class="body">
+        <h2><?= $menu->heading ?></h2>
+        <i><?= $menuOpen ?></i>
+      </div>
+    </a>
+  <?php endforeach; ?>
 </section>

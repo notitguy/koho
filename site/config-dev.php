@@ -53,10 +53,10 @@ $config->templateCompile = false;
  * Installer: Database Configuration
  * 
  */
-$config->dbHost = 'c072um.forpsi.com';
-$config->dbName = 'f134726';
-$config->dbUser = 'f134726';
-$config->dbPass = 'Prague2020';
+$config->dbHost = 'localhost';
+$config->dbName = 'koho';
+$config->dbUser = 'root';
+$config->dbPass = '';
 $config->dbPort = '3306';
 
 /**
@@ -113,7 +113,7 @@ $config->installed = 1677507726;
  * Installer: HTTP Hosts Whitelist
  * 
  */
-$config->httpHosts = array('kohoutekresto.cz', 'www.kohoutekresto.cz');
+$config->httpHosts = array('koho.dev', 'www.koho.dev');
 
 
 /**

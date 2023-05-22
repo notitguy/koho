@@ -14,7 +14,7 @@ $components = $config->paths->templates . "inc/components/";
 
 // Globals
 
-$businessName = _x('Kohoutek Restaurant', 'header');
+$businessName = _x('Kohoutek Restaurant', 'site');
 $address = "Slezská 780/49, Praha 3 - Vinohrady";
 $phone = "+420 602 760 996";
 $email = "info@kohoutekresto.cz";
@@ -30,3 +30,14 @@ $tripadvisorIcon = $assets ."/icons/tripadvisor.svg";
 
 $reservationLink = "https://kohoutek-restaurace.reservio.com/";
 $orderLink = "https://speedlo.cz/app/kohoutek/wb/home";
+
+// Translations
+
+$about = _x('Our story', 'site');
+$menuWord = _x('Menu', 'site');
+$shop = _x('Shop', 'site');
+$findUs = _x('Find us', 'site');
+$reservation = _x('Reservation', 'site');
+
+$menuTitle = _x('Choose your menu', 'site');
+$menuOpen = _x('Open', 'site');

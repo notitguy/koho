@@ -12,11 +12,10 @@ $shopHelmet = $assets ."/images/photos/shop-helmet.jpg";
 <section id="shop">
   <article class="container">
     <div class="body">
-      <h2>Exclusive <br>concept store</h2>
-      <p>Kohoutek is more than just a restaurant - it is a place where we share our passion.</p>
-      <p>All items you find in our restaurant are presented for sale. Visit our online shop and get your favorite piece from Kohoutek!</p>
+      <h2><?= $page->heading_shop ?></h2>
+      <?= $page->body_shop ?>
       <!-- <a href="#" class="btn">Shop online <img src="<?= $iconShop ?>" width="24" height="24" alt=""></a> -->
-      <h3>Online shop coming soon!</h3>
+      <!-- <h3>Online shop coming soon!</h3> -->
     </div>
     <section class="shop__tiles">
       <figure>

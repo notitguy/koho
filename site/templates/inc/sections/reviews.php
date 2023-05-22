@@ -7,24 +7,29 @@ $iconStar = $assets ."/icons/star.svg";
 <section>
   <article class="reviews container">
     <div class="body">
-      <h2>Top Rated Restaurant</h2>
-      <p>When we share a meal, more than just food and drinks are exchanged. Stories are told, connections are made, and friendships are forged.</p>
-      <!-- <p>When the food is as good as the company, we’re able to enjoy the experience just a bit more. We believe that good foods and drinks bring out the best in us.</p> -->
-      <p>Every dish is made with 100% authentic Italian flavors. And we make sure to give you the attention and service that you deserve, allowing you to focus on what really matters – your friends and family.</p>
+      <h2><?= $page->heading_reviews ?></h2>
+      <?= $page->body_reviews ?>
     </div>
     <!-- Slider main container -->
     <div class="swiper reviews__slider">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">
+        <?php foreach ($page->reviews as $review) : ?>
+          <div class="swiper-slide">
+            <span><?= $review->heading_reviews[0] ?></span>
+            <h4><?= $review->heading_reviews ?></h4>
+            <div class="stars"></div>
+            <cite class="review__text"><?= $review->body_reviews ?></cite>
+          </div>
+        <?php endforeach; ?>
+        <!-- <div class="swiper-slide">
           <span>R</span>
           <h4>Regards Suki</h4>
           <div class="stars"></div>
           <cite class="review__text">
             Stumbled across this place, and at first was taken back by what looked like a cool restaurant but with a  McDonald's restaurant ordering system by the door.
             Regardless the food came in good time was delicious, and steak cook and rested perfectly.  The staff were pleasant and friendly. Didn't get to stay for dessert so will be back to try.
-            <!-- <p>Extra info... card or cash payments can be made but you have to pay upfront for you meal first when using the ordering system, however you can order additional items and pay at the end.</p> -->
           </cite>
         </div>
         <div class="swiper-slide">
@@ -66,7 +71,7 @@ $iconStar = $assets ."/icons/star.svg";
           <cite class="review__text">
           This restaurant has a very interesting concept: when you get there you have 2 machines (eng and cz) where you can order your meal (a staff member will help you when needed). Its very easy to use and you can select the main dish, side dishes, drinks, sauces, desserts and coffee (you can even select the order they are delivered at your table!)
           </cite>
-        </div>
+        </div> -->
 
       </div>
       <!-- If we need pagination -->

@@ -9,16 +9,14 @@ $chevronIcon = $assets ."/icons/chevron-down.svg";
 
 ?>
 
-</main>
-
 <div class="border --dark"><div></div></div>
 <footer class="container" id="footer">
   <section>
     <h2><?= $businessName ?></h2>
     <address>
       <ul class="opening-hours">
-        <li>Monday: <span>16:30 - 22:00</span></li>
-        <li>Tuesday-Sunday: <span>11:00 - 22:00</span></li>
+        <li>Pondělí: <span>16:30 - 22:00</span></li>
+        <li>Úterý-Neděle: <span>11:00 - 22:00</span></li>
       </ul>
       <a href="https://goo.gl/maps/fcWpzhbJtDf5yh3z7" target="_blank" rel="nofollow" class="location">
         <img src="<?= $locationIcon ?>" width="18" alt=""> <?= $address ?>
@@ -37,14 +35,14 @@ $chevronIcon = $assets ."/icons/chevron-down.svg";
     </div>
   </section>
   <section>
-    <h3>Stay in touch</h3>
+    <!-- <h3>Stay in touch</h3>
     <p>Get notified about our events and offers.</p>
     <form action="">
       <input type="text" placeholder="Email">
       <button><img src="<?= $chevronIcon ?>" alt="" width="24" height="24" ></button>
-      <!-- <span><input type="checkbox" name="checkbox"> I agree to terms and conditions.</span> -->
-    </form>
-    <h3 style="margin-top:var(--gutter);margin-bottom:var(--gutter-s)">Press about us</h3>
+       <span><input type="checkbox" name="checkbox"> I agree to terms and conditions.</span>
+    </form> -->
+    <h3 style="margin-top:var(--gutter);margin-bottom:var(--gutter-s)">Média o nás</h3>
     <div class="press">
       <a href="https://www.podbean.com/ew/pb-5mr45-11216ca" target="_blank" rel="nofollow">Prague Times</a>
       <a href="https://www.expats.cz/czech-news/article/best-things-to-do-in-prague-this-weekend-june-18-20" target="_blank" rel="nofollow">Expats.cz</a>
@@ -54,7 +52,7 @@ $chevronIcon = $assets ."/icons/chevron-down.svg";
     </div>
   </section>
   <section>
-    <h3 style="margin-bottom:var(--gutter-s)">Our partners</h3>
+    <h3 style="margin-bottom:var(--gutter-s)">Naši partneři</h3>
     <div class="partners">
       <a href="http://saniplast.it/en/" target="_blank" rel="nofollow"><img src="<?= $saniplast ?>" width="100" alt=""></a>
       <a href="http://www.cetecho.cz/" target="_blank" rel="nofollow"><img src="<?= $catecho ?>" width="100" alt=""></a>

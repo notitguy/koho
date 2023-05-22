@@ -5,9 +5,9 @@ section#shop {
   }
   & h2 {
     width: fit-content;
-    text-align: center;
+    max-width: 400px;
     color: var(--c-primary);
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
     margin-bottom: var(--gutter-l);
   }
   & a.btn {

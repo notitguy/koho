@@ -1,18 +1,18 @@
 // Duplicate running text
-const container = document.querySelector(".running-text"),
-      h2 = document.querySelector(".running-text h2"),
-      runningText = h2.textContent,
-      span = document.createElement("span");
+// const container = document.querySelector(".running-text"),
+//       h2 = document.querySelector(".running-text h2"),
+//       runningText = h2.textContent,
+//       span = document.createElement("span");
 
-span.append(runningText);
+// span.append(runningText);
 
-let i = 0;
-do {
-  i += 1;
-  const span = document.createElement("span");
-  span.append(runningText);
-  container.appendChild(span);
-} while (i < 15);
+// let i = 0;
+// do {
+//   i += 1;
+//   const span = document.createElement("span");
+//   span.append(runningText);
+//   container.appendChild(span);
+// } while (i < 15);
 
 // Events toggle
 const cards = document.querySelectorAll(".event__card");
