@@ -8,14 +8,12 @@ $deliveryImage = $assets ."/images/photos/delivery.jpg";
 <section id="delivery">
   <article class="container">
     <div class="body">
-      <h2>Doručení Kohout!</h2>
+      <h2><?= $page->heading_delivery ?></h2>
       <div class="delivery__card">
-        <h3>Si ji můžete dopřat doma</h3>
-        <ul>
-          <li>- Doručení zdarma v rámci Prahy 3</li>
-          <li>- Nápoj zdarma </li>
-        </ul>
-        <a href="<?= $orderLink ?>" class="btn" target="_blank" rel="nofollow" style="margin-top:var(--gutter-s)">Objednat <img src="<?= $iconBag ?>" alt=""></a>
+        <?= $page->body_delivery ?>
+        <a href="<?= $orderLink ?>" class="btn" target="_blank" rel="nofollow" style="margin-top:var(--gutter-s)" data-event="orderClickDelivery">
+          <?= $orderLinkText ?> <img src="<?= $iconBag ?>" alt="">
+        </a>
       </div>
     </div>
     <div class="delivery-media frame">

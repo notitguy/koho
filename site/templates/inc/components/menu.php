@@ -5,8 +5,13 @@
     <img src="<?= $assets ."/icons/splash-right.svg" ?>" width="32" height="55" alt="">
   </h3>
   <?php foreach ($page->menu_repeater as $menu) : ?>
-    <a href="<?= $menu->menu_file->url ?>" target="_blank">
-      <img src="<?= $menu->menu_image->url ?>" alt="">
+    <?php if($menu === $page->menu_repeater->first()) { 
+      $dataEvent = "menuClick";
+    } else {
+      $dataEvent = "lunchMenuClick";
+    } ?>
+    <a href="<?= $menu->menu_file->url ?>" target="_blank" data-event="<?= $dataEvent ?>">
+      <img src="<?= $menu->menu_image->url ?>" alt="Kohoutek menu">
       <div class="body">
         <h2><?= $menu->heading ?></h2>
         <i><?= $menuOpen ?></i>

@@ -13,3 +13,14 @@ if(!defined("PROCESSWIRE")) die();
  * copy of all ProcessWire API variables.
  *
  */
+
+ // Remove meta generator from SeoMaestro
+ $wire->addHookAfter('SeoMaestro::renderMetatags', function (HookEvent $event) {
+  $tags = $event->arguments(0);
+  $group = $event->arguments(1);
+
+  if ($group === null) {
+      unset($tags['meta_generator']);
+      $event->return = $tags;
+  }
+});

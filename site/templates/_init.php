@@ -31,13 +31,21 @@ $tripadvisorIcon = $assets ."/icons/tripadvisor.svg";
 $reservationLink = "https://kohoutek-restaurace.reservio.com/";
 $orderLink = "https://speedlo.cz/app/kohoutek/wb/home";
 
+// General info page
+$info = $pages->get(1049);
+
 // Translations
 
 $about = _x('Our story', 'site');
 $menuWord = _x('Menu', 'site');
 $shop = _x('Shop', 'site');
+$delivery = _x('Delivery', 'site');
 $findUs = _x('Find us', 'site');
-$reservation = _x('Reservation', 'site');
+$reservationLinkText = _x('Reservation', 'site');
+$orderLinkText = _x('Order Now', 'site');
 
 $menuTitle = _x('Choose your menu', 'site');
 $menuOpen = _x('Open', 'site');
+
+$mediaLinksTitle = _x('They wrote about us', 'site');
+$partnersTitle = _x('Our Partners', 'site');

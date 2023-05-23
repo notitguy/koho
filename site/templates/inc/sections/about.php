@@ -22,7 +22,10 @@ $galleryIcon = $assets ."/icons/gallery.svg";
       <h2><?= $page->heading_about ?></h2>
       <?= $page->body_about ?>
       <div class="tiles">
-        <a href="https://www.kohoutekresto.cz/site/assets/files/1027/menu-cz.pdf" target="_blank" class="btn">
+        <?php $menuUrl = $page->menu_repeater->first()->menu_file->url;
+        ?>
+        <a href="<?= $menuUrl ?>" target="_blank" class="btn">
+        <!-- <a href="https://www.kohoutekresto.cz/site/assets/files/1027/menu-cz.pdf" target="_blank" class="btn"> -->
           <img src="<?= $menuIcon ?>" width="32" height="32" alt="">
           Menu
         </a>

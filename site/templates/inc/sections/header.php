@@ -13,6 +13,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav class="desktop">
       <a href="#menu"><?= $menuWord ?></a>
       <a href="#about"><?= $about ?></a>
+      <a href="#delivery"><?= $delivery ?></a>
       <!-- <a href="#shop"><?= $shop ?></a> -->
       <a href="#footer"><?= $findUs ?></a>
     </nav>
@@ -23,7 +24,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="<?= $home->url?>" class="mobile-logo">
         <img src="<?= $logoResponsive ?>" alt="Kohoutek" width="32">
       </a>
-      <a href="<?= $reservationLink ?>" class="btn --secondary" target="_blank" rel="nofollow"><?= $reservation ?></a>
+      <a href="<?= $reservationLink ?>" class="btn --secondary" target="_blank" rel="nofollow" data-event="reserveClickNav"><?= $reservationLinkText ?></a>
       <?php //include ($components ."language-switcher.php") ?>
       <div class="nav-icon">
         <!-- <img src="<?= $legIcon ?>" width="24" alt=""><img src="<?= $legIcon ?>" width="24" alt=""> -->
@@ -36,7 +37,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <!-- <a href="#shop" style="--d: 2"><?= $shop ?></a> -->
           <a href="#footer" style="--d: 3"><?= $findUs ?></a>
         </div>
-        <a href="<?= $orderLink ?>" class="btn --primary" target="_blank" rel="nofollow">Objednat
+        <a href="<?= $orderLink ?>" class="btn --primary" target="_blank" rel="nofollow" data-event="orderClickNav">
+          <?= $orderLinkText ?>
           <img src="<?= $bagIcon ?>" width="26" height="26" alt="">
         </a>
         <h3><?= $businessName ?></h3>

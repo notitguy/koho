@@ -104,9 +104,9 @@
       text-align: center;
       grid-column: span 3;
     }
-    & .body, & ul {
+    /* & .body, & ul {
       margin-top: var(--gutter-l);
-    } 
+    }  */
     & div.cockerel-media {
 
       &::before {
