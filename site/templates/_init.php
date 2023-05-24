@@ -33,6 +33,7 @@ $orderLink = "https://speedlo.cz/app/kohoutek/wb/home";
 
 // General info page
 $info = $pages->get(1049);
+$events = $pages->get(1050);
 
 // Translations
 

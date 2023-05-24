@@ -44,8 +44,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3><?= $businessName ?></h3>
         <address>
           <ul class="opening-hours">
-            <li>Pondělí: <span>16:30 - 22:00</span></li>
-            <li>Úterý-Neděle: <span>11:00 - 22:00</span></li>
+            <li><?= $info->days_open1 ?>: <span><?= $info->hours_open1 ?></span></li>
+            <li><?= $info->days_open2 ?>: <span><?= $info->hours_open2 ?></span></li>
           </ul>
           <a href="https://goo.gl/maps/fcWpzhbJtDf5yh3z7" target="_blank" rel="nofollow" class="location">
             <img src="<?= $locationIcon ?>" width="18" alt=""> <?= $address ?>

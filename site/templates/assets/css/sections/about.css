@@ -53,6 +53,7 @@
         /* border-radius: var(--corner-s); */
         /* border: 1px solid var(--c-primary-50); */
         /* box-shadow: 5px 5px 0 var(--c-primary-50); */
+        height: auto;
       }
 
       &:nth-child(1) {
@@ -71,12 +72,12 @@
         display: grid;
         place-items: center;
 
-        & img, & span {
+        & div, & span {
           grid-column: 1;
           grid-row: 1;
         }
         & img {
-          /* filter: brightness(0.4); */
+          filter: brightness(0.6);
         }
         & span {
           font-size: clamp(1.4rem, 4vw, 2.2rem);
@@ -84,6 +85,9 @@
           color: var(--c-primary-80);
           z-index: 0;
         }
+      }
+      &:nth-child(n+4) {
+        display: none;
       }
 
       &:hover {

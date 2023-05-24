@@ -4,7 +4,7 @@
 
 ?>
 
-<main pw-id="content" class="main">
+<main pw-id="content">
 	<?php include($sections ."hero.php"); ?>
 	<?php include($sections ."about.php"); ?>
 	<?php include($sections ."cockerel.php"); ?>

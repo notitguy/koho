@@ -1,20 +1,22 @@
 /* Eventlist */
-body.home .eventlist {
 
-  & .btn {
-    margin-block: var(--gutter);
-  }
-}
 @media (width > 768px) {
-  body.home .eventlist {
+  .eventlist article {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     column-gap: var(--gutter);
 
-    & .eventlist__banner {
+    & .eventlist__body {
       grid-column: 1;
       grid-row: span 4;
+
+      & .btn {
+        margin-block: var(--gutter);
+      }
     }
+  }
+  body.home .eventlist article {
+    grid-template-columns: 1fr 1fr;
+
     & .event__card, & a.btn {
       grid-column: 2;
     }
