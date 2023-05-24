@@ -127,7 +127,3 @@ $config->httpHosts = array('kohoutekresto.cz', 'www.kohoutekresto.cz');
 $config->debug = true;
 
 
-/**
- * set locale
- */
-// setlocale(LC_ALL, 'cs_CZ.UTF-8');

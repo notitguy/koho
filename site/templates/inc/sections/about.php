@@ -12,7 +12,7 @@ $galleryIcon = $assets ."/icons/gallery.svg";
   <!-- <div class="banner container">This is a place for a<span>BANNER/FLYER</span>It won't show, if there is no banner.</div> -->
   <?php include ($components ."menu.php") ?>
   <?php // include ($components ."running-text.php") ?>
-  <?php // include ($components ."eventlist-home.php") ?>
+  <?php // include ($components ."eventlist.php") ?>
   <article id="about" class="container">
     <div class="about__video" style="padding:50vmin 50% 0 50%;position:relative;">
       <iframe src="https://player.vimeo.com/video/772986451?h=5ed232e1ec&autoplay=1&loop=1&byline=0&portrait=0&muted=1&controls=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>
@@ -45,11 +45,7 @@ $galleryIcon = $assets ."/icons/gallery.svg";
       data-pswp-height="<?= $image->height(); ?>"
       target="_blank">
         <div>
-        <?php if($image === $page->gallery->first()) { 
-          $imgHeight = 432;
-        } else {
-          $imgHeight = 192;
-        } ?>
+        <?php $imgHeight = $image === $page->gallery->first() ? 432 : 192; ?>
           <img src="<?= $image->size(288, $imgHeight)->url ?>" width="288" height="<?= $imgHeight ?>" alt="Kohoutek Restaurant">
         </div>
         <?php if($image === $page->gallery->eq(2)) {

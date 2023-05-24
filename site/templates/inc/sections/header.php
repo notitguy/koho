@@ -11,10 +11,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header>
   <div class="container">
     <nav class="desktop">
-      <a href="#menu"><?= $menuWord ?></a>
-      <a href="#about"><?= $about ?></a>
-      <a href="#delivery"><?= $delivery ?></a>
-      <!-- <a href="#shop"><?= $shop ?></a> -->
+      <a href="<?= $home->url ?>#menu"><?= $menuWord ?></a>
+      <a href="<?= $home->url ?>#about"><?= $about ?></a>
+      <a href="<?= $home->url ?>#delivery"><?= $delivery ?></a>
+      <!-- <a href="<?= $home->url ?>#shop"><?= $shop ?></a> -->
       <a href="#footer"><?= $findUs ?></a>
     </nav>
     <a href="<?= $home->url?>" class="logo">
@@ -32,9 +32,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="quick-nav">
         <div class="links">
-          <a href="#menu" style="--d: 0"><?= $menuWord ?></a>
-          <a href="#about" style="--d: 1"><?= $about ?></a>
-          <!-- <a href="#shop" style="--d: 2"><?= $shop ?></a> -->
+          <a href="<?= $home->url ?>#menu" style="--d: 0"><?= $menuWord ?></a>
+          <a href="<?= $home->url ?>#about" style="--d: 1"><?= $about ?></a>
+          <!-- <a href="<?= $home->url ?>#shop" style="--d: 2"><?= $shop ?></a> -->
           <a href="#footer" style="--d: 3"><?= $findUs ?></a>
         </div>
         <a href="<?= $orderLink ?>" class="btn --primary" target="_blank" rel="nofollow" data-event="orderClickNav">

@@ -10,9 +10,10 @@
       </a> -->
     </div>
     <?php
-    $allEvents = $pages->find("template=events");
-    
-    foreach ($events->eventlist as $event) : ?>
+    $today = strtotime("-1 day");
+    $limit = $page->template->name === "home" ? 3 : 20; 
+
+    foreach ($page->eventlist->find("time>$today, limit=$limit") as $event) : ?>
 
       <?php 
         $locale = $user->language->getLocale();
