@@ -48,5 +48,7 @@ $orderLinkText = _x('Order Now', 'site');
 $menuTitle = _x('Choose your menu', 'site');
 $menuOpen = _x('Open', 'site');
 
+// $openNow = _x('Our now', 'site');
+
 $mediaLinksTitle = _x('They wrote about us', 'site');
 $partnersTitle = _x('Our Partners', 'site');
