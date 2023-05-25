@@ -8,7 +8,7 @@ $deliveryIcon =  $assets ."icons/delivery-car.svg";
   <div class="body container --small">
     <h1><?= $page->heading ?></h1>
     <div class="cta">
-      <a href="<?= $orderLink ?>" class="btn --primary" target="_blank" rel="nofollow" data-event="orderClickHero">
+      <a href="<?= $info->order_link ?>" class="btn --primary" target="_blank" rel="nofollow" data-event="orderClickHero">
         <?= $page->button_text_hero ?>
         <img src="<?= $bagIcon ?>" width="26" height="26" alt="">
       </a>

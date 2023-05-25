@@ -11,7 +11,7 @@ $deliveryImage = $assets ."/images/photos/delivery.jpg";
       <h2><?= $page->heading_delivery ?></h2>
       <div class="delivery__card">
         <?= $page->body_delivery ?>
-        <a href="<?= $orderLink ?>" class="btn" target="_blank" rel="nofollow" style="margin-top:var(--gutter-s)" data-event="orderClickDelivery">
+        <a href="<?= $info->order_link ?>" class="btn" target="_blank" rel="nofollow" style="margin-top:var(--gutter-s)" data-event="orderClickDelivery">
           <?= $orderLinkText ?> <img src="<?= $iconBag ?>" alt="">
         </a>
       </div>
