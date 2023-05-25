@@ -99,7 +99,7 @@ header {
     }
   }
   .btn.--primary {
-    margin-block: var(--gutter);
+    margin-block: 2rem;
   }
   .opening-hours {
     color: var(--c-grey-light);

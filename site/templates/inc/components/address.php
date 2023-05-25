@@ -7,7 +7,7 @@
     <img src="<?= $locationIcon ?>" width="18" alt=""> <?= $address ?>
   </a>
   <a href="tel:<?= $phone ?>"><?= $phone ?></a>
-  <a href="mailto:<?= $email ?>" style="margin-top: -0.5rem;"><?= $email ?></a>
+  <a href="mailto:<?= $email ?>" style="margin-top: -1rem;"><?= $email ?></a>
   <div class="socials">
     <a href="https://www.instagram.com/kohoutek_resto/" target="_blank" rel="nofollow"><img width="18" height="18" src="<?= $instagramIcon ?>" alt=""></a>
     <a href="https://www.facebook.com/KohoutekResto/" target="_blank" rel="nofollow"><img width="18" height="18" src="<?= $facebookIcon ?>" alt=""></a>

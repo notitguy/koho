@@ -234,7 +234,7 @@ main > section {
 address {
   font-style: normal;
   display: grid;
-  gap: var(--gutter-s);
+  gap: var(--gutter);
   margin-block: var(--gutter-s);
 
   & a {
@@ -263,5 +263,4 @@ address {
 }
 .socials {
   gap: var(--gutter);
-  margin-top: var(--gutter-s);
 }
