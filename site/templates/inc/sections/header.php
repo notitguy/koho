@@ -25,7 +25,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="<?= $logoResponsive ?>" alt="Kohoutek" width="32">
       </a>
       <a href="<?= $info->reservation_link ?>" class="btn --secondary" target="_blank" rel="nofollow" data-event="reserveClickNav"><?= $reservationLinkText ?></a>
-      <?php //include ($components ."language-switcher.php") ?>
+      <?php include ($components ."language-switcher.php") ?>
       <div class="nav-icon">
         <!-- <img src="<?= $legIcon ?>" width="24" alt=""><img src="<?= $legIcon ?>" width="24" alt=""> -->
         <span></span> <span></span> <span></span> <span></span>
@@ -41,7 +41,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <?= $orderLinkText ?>
           <img src="<?= $bagIcon ?>" width="26" height="26" alt="">
         </a>
-        <h3><?= $businessName ?></h3>
+        <h3 style="margin-bottom:var(--gutter-s)"><?= $businessName ?></h3>
         <?php include($components ."address.php"); ?>
       </div>
     </nav>

@@ -10,12 +10,13 @@
       </a> -->
     </div>
     <?php
-    $today = strtotime("-1 day");
-    $limit = $page->template->name === "home" ? 3 : 20; 
+    $today = strtotime("-12 hours"); // get yesterday's date to hide expired events
+    $limit = $page->template->name === "home" ? 3 : 20; // limit "homepage events to 3, events page to 20"
 
-    foreach ($page->eventlist->find("time>$today, limit=$limit") as $event) : ?>
+    foreach ($page->eventlist->find("time>$today, limit=$limit, sort=time") as $event) : ?>
 
-      <?php 
+      <?php
+        // localised dates
         $locale = $user->language->getLocale();
 
         if ($locale === "cs_CZ.utf-8") {
@@ -24,7 +25,7 @@
           $pattern = "eeee, MMMM d - kk:mm";
         }
         
-        $fmt = datefmt_create(
+        $fmt = datefmt_create( // Time formatter
           $locale,
           IntlDateFormatter::FULL,
           IntlDateFormatter::FULL,
@@ -32,14 +33,38 @@
           IntlDateFormatter::GREGORIAN,
           $pattern
         );
-        $input = strtotime($event->time);
-        $output = datefmt_format($fmt, $input);
+        $input = strtotime($event->time); // get event time
+        $eventTimeLC = datefmt_format($fmt, $input); // format event time
+
+        // icons
+        $eventIconType = $event->event_icon->title;
+        $eventIcon = '';
+        
+        switch ($eventIconType) {
+          case 'Food':
+            $eventIcon = $assets . "icons/food.svg";
+            break;
+          case 'Football':
+            $eventIcon = $assets . "icons/football.svg";
+            break;
+          case 'Racing':
+            $eventIcon = $assets . "icons/racing.svg";
+            break;
+          case 'Wine':
+            $eventIcon = $assets . "icons/wine-glass.svg";
+            break;
+          
+          default:
+          $eventIcon = $assets . "icons/calendar-filled.svg";
+            break;
+        }
       ?>
 
       <div class="event__card">
         <div class="event__header">
-          <img src="<?= $assets . "icons/racing.svg" ?>" alt="">
-          <span><?= $output ?></span>
+
+          <img src="<?= $eventIcon  ?>" alt="" width="24" height="24">
+          <span><?= $eventTimeLC ?></span>
           <h3><?= $event->heading ?></h3>
           <i></i>
         </div>

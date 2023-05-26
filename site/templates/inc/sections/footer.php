@@ -26,7 +26,7 @@ $chevronIcon = $assets ."/icons/chevron-down.svg";
       <button><img src="<?= $chevronIcon ?>" alt="" width="24" height="24" ></button>
        <span><input type="checkbox" name="checkbox"> I agree to terms and conditions.</span>
     </form> -->
-    <h3 style="margin-block: 0 var(--gutter-s);"><?= $mediaLinksTitle ?></h3>
+    <h3><?= $mediaLinksTitle ?></h3>
     <div class="press">
       <a href="https://www.podbean.com/ew/pb-5mr45-11216ca" target="_blank" rel="nofollow">Prague Times</a>
       <a href="https://www.expats.cz/czech-news/article/best-things-to-do-in-prague-this-weekend-june-18-20" target="_blank" rel="nofollow">Expats.cz</a>
@@ -36,7 +36,7 @@ $chevronIcon = $assets ."/icons/chevron-down.svg";
     </div>
   </section>
   <section>
-    <h3 style="margin-bottom:var(--gutter-s)"><?= $partnersTitle ?></h3>
+    <h3><?= $partnersTitle ?></h3>
     <div class="partners">
       <a href="http://saniplast.it/en/" target="_blank" rel="nofollow"><img src="<?= $saniplast ?>" width="100" alt=""></a>
       <a href="http://www.cetecho.cz/" target="_blank" rel="nofollow"><img src="<?= $catecho ?>" width="100" alt=""></a>
