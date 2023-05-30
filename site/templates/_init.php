@@ -37,6 +37,8 @@ $events = $pages->get(1050);
 
 // Translations
 
+$runningText = _x('Upcoming events', 'site');
+
 $about = _x('Our story', 'site');
 $menuWord = _x('Menu', 'site');
 $shop = _x('Shop', 'site');
@@ -48,7 +50,7 @@ $orderLinkText = _x('Order Now', 'site');
 $menuTitle = _x('Choose your menu', 'site');
 $menuOpen = _x('Open', 'site');
 
-// $openNow = _x('Our now', 'site');
+// $openNow = _x('Open now', 'site');
 
 $mediaLinksTitle = _x('They wrote about us', 'site');
 $partnersTitle = _x('Our Partners', 'site');

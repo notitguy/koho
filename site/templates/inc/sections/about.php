@@ -1,7 +1,5 @@
 <?php namespace ProcessWire;
 
-$runningText = "Upcoming events";
-
 $menuIcon = $assets ."/icons/menu.svg";
 $locationIcon = $assets ."/icons/location.svg";
 $galleryIcon = $assets ."/icons/gallery.svg";
@@ -11,8 +9,8 @@ $galleryIcon = $assets ."/icons/gallery.svg";
 <section>
   <!-- <div class="banner container">This is a place for a<span>BANNER/FLYER</span>It won't show, if there is no banner.</div> -->
   <?php include ($components ."menu.php") ?>
-  <?php // include ($components ."running-text.php") ?>
-  <?php // include ($components ."eventlist.php") ?>
+  <?php include ($components ."running-text.php") ?>
+  <?php include ($components ."eventlist.php") ?>
   <article id="about" class="container">
     <div class="about__video" style="padding:50vmin 50% 0 50%;position:relative;">
       <iframe src="https://player.vimeo.com/video/772986451?h=5ed232e1ec&autoplay=1&loop=1&byline=0&portrait=0&muted=1&controls=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"></iframe>

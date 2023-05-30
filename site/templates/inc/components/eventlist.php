@@ -2,9 +2,8 @@
   <article class="container">
     <div class="eventlist__body">
       <!-- <img src="<?= $assets ."/images/photos/event.jpg"?>" alt=""> -->
-      <h2>Kohoutek events</h2>
-      <p>Ducimus similique sit explicabo ipsa minus aut.</p>
-      <p>Magnam nemo laboriosam sed, veritatis voluptatibus quibusdam sapiente maiores deleniti voluptatem odit amet, quis distinctio!</p>
+      <h2><?= $events->heading ?></h2>
+      <?= $events->body_about ?>
       <!-- <a href="#" class="btn">More events
         <img src="<?= $assets . "icons/calendar.svg" ?>" width="20" height="20" alt="">
       </a> -->
@@ -13,7 +12,7 @@
     $today = strtotime("-12 hours"); // get yesterday's date to hide expired events
     $limit = $page->template->name === "home" ? 3 : 20; // limit "homepage events to 3, events page to 20"
 
-    foreach ($page->eventlist->find("time>$today, limit=$limit, sort=time") as $event) : ?>
+    foreach ($events->eventlist->find("time>$today, limit=$limit, sort=time") as $event) : ?>
 
       <?php
         // localised dates
