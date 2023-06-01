@@ -4,7 +4,10 @@
 // This is defined by $config->prependTemplateFile in /site/config.php.
 // Use this to define shared variables, functions, classes, includes, etc. 
 
+// Page variables
 $home = $pages->get('/'); // homepage
+$info = $pages->get(1049);
+$events = $pages->get(1050);
 
 // Folder paths
 $assets = $config->urls->templates . "assets/";
@@ -30,10 +33,6 @@ $tripadvisorIcon = $assets ."/icons/tripadvisor.svg";
 
 $reservationLink = "https://kohoutek-restaurace.reservio.com/";
 $orderLink = "https://speedlo.cz/app/kohoutek/wb/home";
-
-// General info page
-$info = $pages->get(1049);
-$events = $pages->get(1050);
 
 // Translations
 

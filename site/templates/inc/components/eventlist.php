@@ -4,6 +4,13 @@
       <!-- <img src="<?= $assets ."/images/photos/event.jpg"?>" alt=""> -->
       <h2><?= $events->heading ?></h2>
       <?= $events->body_about ?>
+      <?php
+        $banner = $events->banner;
+        if($banner) {
+          // $thumb = $image->size(100, 100);
+          echo "<a href='$banner->url' target='_blank'><img src='$banner->url' alt='Kohoutek events'></a>";
+        }
+      ?>
       <!-- <a href="#" class="btn">More events
         <img src="<?= $assets . "icons/calendar.svg" ?>" width="20" height="20" alt="">
       </a> -->
