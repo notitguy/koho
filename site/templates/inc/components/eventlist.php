@@ -64,18 +64,27 @@
           $eventIcon = $assets . "icons/calendar-filled.svg";
             break;
         }
+
+        // fully booked?
+        $isFullyBooked = $event->booked;
+        $bookedText = $isFullyBooked === 1 ? "<span class='booked'>$booked</span>" : null;
+        
+        // event flyer
+        $flyer = $event->event_flyer;
+        $flyerText = $flyer ? "<a href='$flyer->url' class='btn'>$seeMore</a>" : null;
       ?>
 
       <div class="event__card">
         <div class="event__header">
 
           <img src="<?= $eventIcon  ?>" alt="" width="24" height="24">
-          <span><?= $eventTimeLC ?></span>
+          <span><?= $eventTimeLC ?> <?= $bookedText ?> </span>
           <h3><?= $event->heading ?></h3>
           <i></i>
         </div>
         <div class="body">
           <p><?= $event->body ?></p>
+          <?= $flyerText ?>
         </div>
       </div>
 

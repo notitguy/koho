@@ -24,6 +24,7 @@
   & ul {
     display: grid;
     gap: var(--gutter-s);
+    list-style: none;
 
     & li {
       /* display: grid; */

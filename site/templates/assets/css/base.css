@@ -130,8 +130,8 @@ p {
     margin-top: var(--gutter);
   }
 }
-ul:not(.list) {
-  list-style: none;
+ul {
+  list-style: inside;
 }
 a {
   text-decoration: none;

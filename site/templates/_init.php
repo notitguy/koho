@@ -48,6 +48,8 @@ $orderLinkText = _x('Order Now', 'site');
 
 $menuTitle = _x('Choose your menu', 'site');
 $menuOpen = _x('Open', 'site');
+$booked = _x('Fully booked', 'site');
+$seeMore = _x('More info', 'site');
 
 // $openNow = _x('Open now', 'site');
 
