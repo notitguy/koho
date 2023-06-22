@@ -28,6 +28,7 @@ section#shop {
       transition-property: box-shadow, transform;
       transition-duration: var(--duration);
       transition-timing-function: var(--easing);
+      cursor: pointer; /*if there are no links*/
 
       &:hover {
         box-shadow: 4px 5px var(--c-primary);
@@ -46,6 +47,27 @@ section#shop {
       }
     }
   }
+}
+
+.pswp__custom-caption {
+  background-color: rgb(80 80 80 / 50%);
+  color: #fff;
+  width: calc(100% - 32px);
+  max-width: 400px;
+  padding: var(--gutter);
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+}
+.pswp__custom-caption a {
+  color: #fff;
+  text-decoration: underline;
+}
+.hidden-caption-content,
+:not(#gallery--furniture) .pswp__custom-caption {
+  display: none;
 }
 
 @media (width < 768px) {
