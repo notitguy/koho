@@ -65,8 +65,7 @@ section#shop {
   color: #fff;
   text-decoration: underline;
 }
-.hidden-caption-content,
-:not(#gallery--furniture) .pswp__custom-caption {
+.hidden-caption-content {
   display: none;
 }
 
