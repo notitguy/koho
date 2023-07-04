@@ -11,7 +11,7 @@ $deliveryImage = $assets ."/images/photos/delivery.jpg";
       <div>
         <?= $page->body ?>
         <a href="<?= $orderLink ?>"
-          class="btn"
+          class="btn --primary"
           style="padding: 0.8rem 1.5rem;"
           rel="nofollow">
           <?= $orderLinkText ?> online
