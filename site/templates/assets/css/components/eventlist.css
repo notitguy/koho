@@ -61,7 +61,7 @@
   display: grid;
   align-items: center;
   grid-template-columns: 24px 1fr 32px;
-  column-gap: var(--gutter-s);
+  gap: var(--gutter-s);
 
   & img {
     grid-column: 1;
@@ -102,5 +102,12 @@
 
   & h3 {
     color: var(--c-primary);
+  }
+}
+
+@media (width < 768px) {
+
+  .event__header span {
+    grid-column: 1/3;
   }
 }
