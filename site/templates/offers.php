@@ -10,7 +10,12 @@ $deliveryImage = $assets ."/images/photos/delivery.jpg";
     <article class="container">
       <div>
         <?= $page->body ?>
-        <a href="<?= $orderLink ?>" class="btn" rel="nofollow"><?= $orderLinkText ?></a>
+        <a href="<?= $orderLink ?>"
+          class="btn"
+          style="padding: 0.8rem 1.5rem;"
+          rel="nofollow">
+          <?= $orderLinkText ?> online
+        </a>
       </div>
       <div class="delivery-media frame">
         <img src="<?= $deliveryImage ?>" alt="">

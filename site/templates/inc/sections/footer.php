@@ -33,6 +33,7 @@ $chevronIcon = $assets ."/icons/chevron-down.svg";
       <a href="https://refresher.cz/103161-Jaka-jsou-nejlepsi-kureci-kridelka-v-Praze-Mame-poradne-paliveho-viteze" target="_blank" rel="nofollow">Refresher</a>
       <a href="https://praguemorning.cz/kohoutek-a-unique-slice-of-italy-serving-cockerel-in-the-heart-of-prague/" target="_blank" rel="nofollow">Prague morning</a>
       <a href="https://www.youtube.com/watch?v=FJwV71gPzTA" target="_blank" rel="nofollow">EATS - Kohoutek</a>
+      <a href="https://www.praha3.cz/getFile/id:1164348/%C4%8Cervenec+-+srpen+2023.pdf" target="_blank" rel="nofollow">Radniční noviny</a>
     </div>
   </section>
   <section>
