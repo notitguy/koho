@@ -119,6 +119,18 @@
   }
 }
 
+div.about__video2 {
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gutter);
+
+  & div.videos {
+    display: flex;
+    gap: var(--gutter);
+  }
+}
+
 @media (width > 768px) {
   #about {
     display: grid;
@@ -159,5 +171,8 @@
         width: 24px;
       }
     }
+  }
+  div.about__video2 {
+    grid-template-columns: 1fr;
   }
 }

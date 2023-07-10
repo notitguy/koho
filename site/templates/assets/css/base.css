@@ -140,6 +140,11 @@ a {
     text-decoration: underline;
   }
 }
+video {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
 /* img {
   border-radius: var(--corner-inner);
 } */
