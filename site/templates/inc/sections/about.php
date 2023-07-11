@@ -1,8 +1,8 @@
 <?php namespace ProcessWire;
 
-$menuIcon = $assets ."/icons/menu.svg";
-$locationIcon = $assets ."/icons/location.svg";
-$galleryIcon = $assets ."/icons/gallery.svg";
+$menuIcon = $assets ."icons/menu.svg";
+$locationIcon = $assets ."icons/location.svg";
+$galleryIcon = $assets ."icons/gallery.svg";
 ?>
 
 <div class="border --80"><div></div></div>

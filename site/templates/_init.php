@@ -25,11 +25,11 @@ $email = "info@kohoutekresto.cz";
 $logo = $assets ."images/logo.svg";
 $logoResponsive = $assets ."icons/kok.svg";
 
-$locationIcon = $assets ."/icons/location.svg";
-$instagramIcon = $assets ."/icons/instagram.svg";
-$googleIcon = $assets ."/icons/google.svg";
-$facebookIcon = $assets ."/icons/facebook.svg";
-$tripadvisorIcon = $assets ."/icons/tripadvisor.svg";
+$locationIcon = $assets ."icons/location.svg";
+$instagramIcon = $assets ."icons/instagram.svg";
+$googleIcon = $assets ."icons/google.svg";
+$facebookIcon = $assets ."icons/facebook.svg";
+$tripadvisorIcon = $assets ."icons/tripadvisor.svg";
 
 $reservationLink = "https://kohoutek-restaurace.reservio.com/";
 $orderLink = "https://speedlo.cz/app/kohoutek/wb/home";

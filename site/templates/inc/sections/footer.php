@@ -1,11 +1,11 @@
 <?php namespace ProcessWire;
 
-$catecho = $assets ."/images/partners/catecho-logo.png";
-$saniplast = $assets ."/images/partners/saniplast_logo.png";
-$somoto = $assets ."/images/partners/somotocz.png";
-$vinpivo = $assets ."/images/partners/vp-282.png";
+$catecho = $assets ."images/partners/catecho-logo.png";
+$saniplast = $assets ."images/partners/saniplast_logo.png";
+$somoto = $assets ."images/partners/somotocz.png";
+$vinpivo = $assets ."images/partners/vp-282.png";
 
-$chevronIcon = $assets ."/icons/chevron-down.svg";
+$chevronIcon = $assets ."icons/chevron-down.svg";
 
 ?>
 
@@ -39,10 +39,10 @@ $chevronIcon = $assets ."/icons/chevron-down.svg";
   <section>
     <h3><?= $partnersTitle ?></h3>
     <div class="partners">
-      <a href="http://saniplast.it/en/" target="_blank" rel="nofollow"><img src="<?= $saniplast ?>" width="100" alt=""></a>
-      <a href="http://www.cetecho.cz/" target="_blank" rel="nofollow"><img src="<?= $catecho ?>" width="100" alt=""></a>
-      <a href="https://www.somoto.cz/" target="_blank" rel="nofollow"><img src="<?= $somoto ?>" width="100" alt=""></a>
-      <a href="https://www.vinohradskypivovar.cz/" target="_blank" rel="nofollow"><img src="<?= $vinpivo ?>" width="100" alt=""></a>
+      <a href="http://saniplast.it/en/" target="_blank" rel="nofollow"><img src="<?= $saniplast ?>" width="100" alt="" loading="lazy"></a>
+      <a href="http://www.cetecho.cz/" target="_blank" rel="nofollow"><img src="<?= $catecho ?>" width="100" alt="" loading="lazy"></a>
+      <a href="https://www.somoto.cz/" target="_blank" rel="nofollow"><img src="<?= $somoto ?>" width="100" alt="" loading="lazy"></a>
+      <a href="https://www.vinohradskypivovar.cz/" target="_blank" rel="nofollow"><img src="<?= $vinpivo ?>" width="100" alt="" loading="lazy"></a>
     </div>
   </section>
 </footer>

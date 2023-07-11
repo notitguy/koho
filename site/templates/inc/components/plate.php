@@ -1,6 +1,8 @@
 <?php namespace ProcessWire;
 
   $plateImage = $assets ."images/hero/plate.png";
+  $plateImage2 = $assets ."images/hero/plate2.png";
+  $plateImage3 = $assets ."images/hero/plate3.png";
 
   $p1 = $assets ."images/hero/peanuts/p1.png";
   $p2 = $assets ."images/hero/peanuts/p2.png";
@@ -41,5 +43,13 @@
   <img src="<?= $p16 ?>" width="38" height="70" alt="">
   <img src="<?= $p17 ?>" width="70" height="62" alt="">
 
-  <img src="<?= $plateImage ?>" width="800" class="plate" alt="">
+  <div class="plates swiper" style="width:100%">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="<?= $plateImage ?>" width="800" class="plate" alt=""></div>
+      <div class="swiper-slide"><img src="<?= $plateImage2 ?>" width="800" class="plate" alt="" loading="lazy"></div>
+      <div class="swiper-slide"><img src="<?= $plateImage3 ?>" width="800" class="plate" alt="" loading="lazy"></div>
+    </div>
+  </div>
 </div>

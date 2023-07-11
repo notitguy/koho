@@ -1,7 +1,7 @@
 <?php namespace ProcessWire;
 
-$iconBag = $assets ."/icons/bag.svg";
-$deliveryImage = $assets ."/images/photos/delivery.jpg";
+$iconBag = $assets ."icons/bag.svg";
+$deliveryImage = $assets ."images/photos/delivery.jpg";
 
 ?>
 <div class="border --90"><div></div></div>
@@ -12,7 +12,7 @@ $deliveryImage = $assets ."/images/photos/delivery.jpg";
       <div class="delivery__card">
         <?= $page->body_delivery ?>
         <a href="<?= $info->order_link ?>" class="btn" target="_blank" rel="nofollow" style="margin-top:var(--gutter-s)" data-event="orderClickDelivery">
-          <?= $orderLinkText ?> <img src="<?= $iconBag ?>" alt="">
+          <?= $orderLinkText ?> <img src="<?= $iconBag ?>" alt="" loading="lazy">
         </a>
       </div>
     </div>

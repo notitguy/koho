@@ -51,27 +51,16 @@ if (cards && headers) {
 // Swiper
 
 // core version + navigation, pagination modules:
-import Swiper, { Navigation, CardsEffect, EffectCards } from 'swiper';
+import Swiper, { Autoplay, EffectFade, EffectCards } from 'swiper';
 // import Swiper and modules styles
 // import 'swiper/css';
 // import 'swiper/css/navigation';
 // import 'swiper/css/pagination';
 
-// init Swiper:
-const swiper = new Swiper('.swiper', {
+// init Swiper for reviews:
+const swiper = new Swiper('.reviews__slider', {
   // configure Swiper to use modules
-  modules: [Navigation, EffectCards],
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  modules: [EffectCards],
   effect: 'cards',
   breakpoints: {
     480: {
@@ -104,6 +93,16 @@ reviewText.forEach(el => {
 
   })
 });
+
+// init Swiper for plates:
+const swiper2 = new Swiper(".plates", {
+  modules: [EffectFade, Autoplay],
+  effect: 'fade',
+  autoplay: {
+    delay: 4000,
+  },
+});
+
 
 // Mobile nav
 const mobileNav = document.querySelectorAll('nav.mobile, .quick-nav');
