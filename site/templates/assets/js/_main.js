@@ -1,3 +1,12 @@
+// Add class after whole page load
+const heroCockerel = document.querySelector(".hero-cockerel");
+
+if (heroCockerel) {
+  window.addEventListener("load", (event) => {
+    heroCockerel.classList.add("flying-peanuts");
+  });
+}
+
 // Duplicate running text
 const container = document.querySelector(".running-text"),
       h2 = document.querySelector(".running-text h2");

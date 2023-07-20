@@ -35,7 +35,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="<?= $home->url ?>#menu" style="--d: 0"><?= $menuWord ?></a>
           <a href="<?= $home->url ?>#about" style="--d: 1"><?= $about ?></a>
           <!-- <a href="<?= $home->url ?>#shop" style="--d: 2"><?= $shop ?></a> -->
-          <a href="<?= $home->url ?>#delivery"><?= $delivery ?></a>
+          <a href="<?= $home->url ?>#delivery" style="--d: 2"><?= $delivery ?></a>
           <a href="#footer" style="--d: 3"><?= $findUs ?></a>
         </div>
         <a href="<?= $info->order_link ?>" class="btn --primary" target="_blank" rel="nofollow" data-event="orderClickNav">

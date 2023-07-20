@@ -25,23 +25,23 @@
 ?>
 
 <div class="hero-cockerel container">
-  <img src="<?= $p1 ?>" width="56" height="57" alt="">
-  <img src="<?= $p2 ?>" width="56" height="39" alt="">
-  <img src="<?= $p3 ?>" width="56" alt="">
-  <img src="<?= $p4 ?>" width="60" height="" alt="">
-  <img src="<?= $p5 ?>" width="56" alt="">
-  <img src="<?= $p6 ?>" width="56" alt="">
-  <img src="<?= $p7 ?>" width="56" height="" alt="">
-  <img src="<?= $p8 ?>" width="56" alt="">
-  <img src="<?= $p9 ?>" width="56" alt="">
-  <img src="<?= $p10 ?>" width="56" height="49" alt="">
-  <img src="<?= $p11 ?>" width="48" height="90" alt="">
-  <img src="<?= $p12 ?>" width="80" height="45" alt="">
-  <img src="<?= $p13 ?>" width="48" height="75" alt="">
-  <img src="<?= $p14 ?>" width="56" height="39" alt="">
-  <img src="<?= $p15 ?>" width="56" height="63" alt="">
-  <img src="<?= $p16 ?>" width="38" height="70" alt="">
-  <img src="<?= $p17 ?>" width="70" height="62" alt="">
+  <img src="<?= $p1 ?>" width="56" height="57" alt="" style="--d:12";>
+  <img src="<?= $p2 ?>" width="56" height="39" alt="" style="--d:1";>
+  <img src="<?= $p3 ?>" width="56" alt="" style="--d:5";>
+  <img src="<?= $p4 ?>" width="60" height="" alt="" style="--d:10";>
+  <img src="<?= $p5 ?>" width="56" alt="" style="--d:8";>
+  <img src="<?= $p6 ?>" width="56" alt="" style="--d:1";>
+  <img src="<?= $p7 ?>" width="56" height="" alt="" style="--d:6";>
+  <img src="<?= $p8 ?>" width="56" alt="" style="--d:5";>
+  <img src="<?= $p9 ?>" width="56" alt="" style="--d:5";>
+  <img src="<?= $p10 ?>" width="56" height="49" alt="" style="--d:5";>
+  <img src="<?= $p11 ?>" width="48" height="90" alt="" style="--d:7";>
+  <img src="<?= $p12 ?>" width="80" height="45" alt="" style="--d:4";>
+  <img src="<?= $p13 ?>" width="48" height="75" alt="" style="--d:3";>
+  <img src="<?= $p14 ?>" width="56" height="39" alt="" style="--d:10";>
+  <img src="<?= $p15 ?>" width="56" height="63" alt="" style="--d:8";>
+  <img src="<?= $p16 ?>" width="38" height="70" alt="" style="--d:12";>
+  <img src="<?= $p17 ?>" width="70" height="62" alt="" style="--d:9";>
 
   <div class="plates swiper" style="width:100%">
     <!-- Additional required wrapper -->
