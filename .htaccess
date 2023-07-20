@@ -474,6 +474,17 @@ DirectoryIndex index.php index.html index.htm
   
   # RewriteRule ^(.*)$ /index.php?it=$1 [L,QSA]
 
+  # The following was added by me
+  # Send WEBP images for JPG or PNG when supported and available.
+  # This means that a request for a JPG or PNG file will instead deliver
+  # WEBP data, but only when the browser supports and understands it.
+
+  RewriteCond %{HTTP_ACCEPT} image/webp
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteCond %{DOCUMENT_ROOT}/$1$2$3/$4.webp -f
+  RewriteCond expr "! %{QUERY_STRING} -strmatch 'nc=*'"
+  RewriteRule ^(.*?)(site/assets/files/)([0-9]+)/(.*)\.(jpe?g|png)(.*)$ /$1$2$3/$4.webp [L]
+
 </IfModule>
 
 #################################################################################################

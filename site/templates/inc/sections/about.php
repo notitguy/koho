@@ -58,7 +58,7 @@ $galleryIcon = $assets ."icons/gallery.svg";
       target="_blank">
         <div>
         <?php $imgHeight = $image === $page->gallery->first() ? 432 : 192; ?>
-          <img src="<?= $image->size(288, $imgHeight)->url ?>" width="288" height="<?= $imgHeight ?>" alt="Kohoutek Restaurant">
+          <img src="<?= $image->size(288, $imgHeight)->url ?>" width="288" height="<?= $imgHeight ?>" alt="Kohoutek Restaurant" loading="lazy">
         </div>
         <?php if($image === $page->gallery->eq(2)) {
           $qty = $page->gallery->count();

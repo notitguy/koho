@@ -11,7 +11,7 @@
       $dataEvent = "lunchMenuClick";
     } ?>
     <a href="<?= $menu->menu_file->url ?>" target="_blank" data-event="<?= $dataEvent ?>">
-      <img src="<?= $menu->menu_image->url ?>" alt="Kohoutek menu">
+      <img src="<?= $menu->menu_image->webpUrl ?>" alt="Kohoutek menu">
       <div class="body">
         <h2><?= $menu->heading ?></h2>
         <i><?= $menuOpen ?></i>

@@ -126,4 +126,8 @@ $config->httpHosts = array('kohoutekresto.cz', 'www.kohoutekresto.cz');
  */
 $config->debug = true;
 
+/** 
+ * Add WebP support
+*/
+$config->imageSizerOptions('webpAdd', true); 
 

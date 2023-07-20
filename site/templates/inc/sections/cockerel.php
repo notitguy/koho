@@ -11,7 +11,7 @@
       <?= $page->body_cockerel ?>
     </div>
     <div class="cockerel-media frame">
-      <img src="<?= $cockerelImage ?>" alt="">
+      <img src="<?= $cockerelImage ?>" alt="" loading="lazy">
     </div>
     <ul>
     <?php foreach ($page->cockerel_repeater as $item) : ?>

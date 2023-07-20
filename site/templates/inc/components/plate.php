@@ -1,26 +1,26 @@
 <?php namespace ProcessWire;
 
-  $plateImage = $assets ."images/hero/plate.png";
-  $plateImage2 = $assets ."images/hero/plate2.png";
-  $plateImage3 = $assets ."images/hero/plate3.png";
+  $plateImage = $assets ."images/hero/webp/plate.webp";
+  $plateImage2 = $assets ."images/hero/webp/plate2.webp";
+  $plateImage3 = $assets ."images/hero/webp/plate3.webp";
 
-  $p1 = $assets ."images/hero/peanuts/p1.png";
-  $p2 = $assets ."images/hero/peanuts/p2.png";
-  $p3 = $assets ."images/hero/peanuts/p3.png";
-  $p4 = $assets ."images/hero/peanuts/p4.png";
-  $p5 = $assets ."images/hero/peanuts/p5.png";
-  $p6 = $assets ."images/hero/peanuts/p6.png";
-  $p7 = $assets ."images/hero/peanuts/p7.png";
-  $p8 = $assets ."images/hero/peanuts/p8.png";
-  $p9 = $assets ."images/hero/peanuts/p9.png";
-  $p10 = $assets ."images/hero/peanuts/p10.png";
-  $p11 = $assets ."images/hero/peanuts/p11.png";
-  $p12 = $assets ."images/hero/peanuts/p12.png";
-  $p13 = $assets ."images/hero/peanuts/p13.png";
-  $p14 = $assets ."images/hero/peanuts/p14.png";
-  $p15 = $assets ."images/hero/peanuts/p15.png";
-  $p16 = $assets ."images/hero/peanuts/p16.png";
-  $p17 = $assets ."images/hero/peanuts/p17.png";
+  $p1 = $assets ."images/hero/peanuts/webp/p1.webp";
+  $p2 = $assets ."images/hero/peanuts/webp/p2.webp";
+  $p3 = $assets ."images/hero/peanuts/webp/p3.webp";
+  $p4 = $assets ."images/hero/peanuts/webp/p4.webp";
+  $p5 = $assets ."images/hero/peanuts/webp/p5.webp";
+  $p6 = $assets ."images/hero/peanuts/webp/p6.webp";
+  $p7 = $assets ."images/hero/peanuts/webp/p7.webp";
+  $p8 = $assets ."images/hero/peanuts/webp/p8.webp";
+  $p9 = $assets ."images/hero/peanuts/webp/p9.webp";
+  $p10 = $assets ."images/hero/peanuts/webp/p10.webp";
+  $p11 = $assets ."images/hero/peanuts/webp/p11.webp";
+  $p12 = $assets ."images/hero/peanuts/webp/p12.webp";
+  $p13 = $assets ."images/hero/peanuts/webp/p13.webp";
+  $p14 = $assets ."images/hero/peanuts/webp/p14.webp";
+  $p15 = $assets ."images/hero/peanuts/webp/p15.webp";
+  $p16 = $assets ."images/hero/peanuts/webp/p16.webp";
+  $p17 = $assets ."images/hero/peanuts/webp/p17.webp";
 
 ?>
 
