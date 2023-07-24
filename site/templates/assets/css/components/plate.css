@@ -28,7 +28,7 @@
     & > img {
       transform: scale(1);
       opacity: 1;
-      animation: float 10s ease-in-out infinite;
+      animation: float 5s ease-in-out infinite;
       animation-delay: calc(500ms*var(--d));
     }
     & > :nth-child(1) {grid-column: 4; grid-row: 1; justify-self: end; }
@@ -77,6 +77,6 @@
 
 @keyframes float {
   0% {transform: translateY(0);}
-  50% {transform: translateY(-1rem);}
+  50% {transform: translateY(10px);}
   100% {transform: translateY(0);}
 }

@@ -108,7 +108,7 @@ const swiper2 = new Swiper(".plates", {
   modules: [EffectFade, Autoplay],
   effect: 'fade',
   autoplay: {
-    delay: 4000,
+    delay: 2000,
   },
 });
 
