@@ -18,7 +18,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="#footer"><?= $findUs ?></a>
     </nav>
     <a href="<?= $home->url?>" class="logo">
-      <img src="<?= $logo ?>" width="115" alt="Kohoutek">
+      <img src="<?= $logoGay ?>" width="115" alt="Kohoutek">
     </a>
     <nav class="mobile">
       <a href="<?= $home->url?>" class="mobile-logo">
