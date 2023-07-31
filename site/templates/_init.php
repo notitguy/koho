@@ -23,7 +23,9 @@ $phone = "+420 602 760 996";
 $email = "info@kohoutekresto.cz";
 
 $logo = $assets ."images/logo.svg";
-$logoResponsive = $assets ."icons/kok.svg";
+$logoResponsive = $assets ."images/logo-responsive.svg";
+$logoGay = $assets ."images/logo-gay.svg";
+$logoResponsiveGay = $assets ."images/logo-responsive-gay.svg";
 
 $locationIcon = $assets ."icons/location.svg";
 $instagramIcon = $assets ."icons/instagram.svg";
