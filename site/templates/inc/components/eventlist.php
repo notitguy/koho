@@ -1,7 +1,6 @@
 <section class="eventlist">
   <article class="container">
     <div class="eventlist__body">
-      <!-- <img src="<?= $assets ."/images/photos/event.jpg"?>" alt=""> -->
       <h2><?= $events->heading ?></h2>
       <?= $events->body_about ?>
       <?php
@@ -10,15 +9,16 @@
           // $thumb = $image->size(100, 100);
           echo "<a href='$banner->url' target='_blank'><img src='$banner->url' alt='Kohoutek events'></a>";
         }
-      ?>
+        ?>
       <!-- <a href="#" class="btn">More events
         <img src="<?= $assets . "icons/calendar.svg" ?>" width="20" height="20" alt="">
       </a> -->
     </div>
+    <img src="<?= $assets ."/images/photos/events/pride-koho.webp"?>" width="500" alt="">
     <?php
     $today = strtotime("-12 hours"); // get yesterday's date to hide expired events
     $limit = $page->template->name === "home" ? 3 : 20; // limit "homepage events to 3, events page to 20"
-
+    
     foreach ($events->eventlist->find("time>$today, limit=$limit, sort=time") as $event) : ?>
 
       <?php
@@ -41,7 +41,7 @@
         );
         $input = strtotime($event->time); // get event time
         $eventTimeLC = datefmt_format($fmt, $input); // format event time
-
+        
         // icons
         $eventIconType = $event->event_icon->title;
         $eventIcon = '';
@@ -50,33 +50,33 @@
           case 'Food':
             $eventIcon = $assets . "icons/food.svg";
             break;
-          case 'Football':
-            $eventIcon = $assets . "icons/football.svg";
-            break;
+            case 'Football':
+              $eventIcon = $assets . "icons/football.svg";
+              break;
           case 'Racing':
             $eventIcon = $assets . "icons/racing.svg";
             break;
-          case 'Wine':
-            $eventIcon = $assets . "icons/wine-glass.svg";
-            break;
-          
-          default:
-          $eventIcon = $assets . "icons/calendar-filled.svg";
-            break;
-        }
-
-        // fully booked?
-        $isFullyBooked = $event->booked;
-        $bookedText = $isFullyBooked === 1 ? "<span class='booked'>$booked</span>" : null;
-        
-        // event flyer
-        $flyer = $event->event_flyer;
-        $flyerText = $flyer ? "<a href='$flyer->url' class='btn'>$seeMore</a>" : null;
-      ?>
+            case 'Wine':
+              $eventIcon = $assets . "icons/wine-glass.svg";
+              break;
+              
+              default:
+              $eventIcon = $assets . "icons/calendar-filled.svg";
+              break;
+            }
+            
+            // fully booked?
+            $isFullyBooked = $event->booked;
+            $bookedText = $isFullyBooked === 1 ? "<span class='booked'>$booked</span>" : null;
+            
+            // event flyer
+            $flyer = $event->event_flyer;
+            $flyerText = $flyer ? "<a href='$flyer->url' class='btn'>$seeMore</a>" : null;
+            ?>
 
       <div class="event__card">
         <div class="event__header">
-
+          
           <img src="<?= $eventIcon  ?>" alt="" width="24" height="24">
           <span><?= $eventTimeLC ?> <?= $bookedText ?> </span>
           <h3><?= $event->heading ?></h3>
@@ -87,10 +87,10 @@
           <?= $flyerText ?>
         </div>
       </div>
-
-    <?php endforeach; ?>
-    <!-- <div class="event__card">
-      <div class="event__header">
+      
+      <?php endforeach; ?>
+      <!-- <div class="event__card">
+        <div class="event__header">
         <img src="<?= $assets . "icons/football.svg" ?>" alt="">
         <span>June 10, 18:00</span>
         <h3>Champions League Final 2023</h3>

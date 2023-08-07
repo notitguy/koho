@@ -13,7 +13,8 @@ $deliveryImage = $assets ."/images/photos/delivery.jpg";
         <a href="<?= $orderLink ?>"
           class="btn --primary"
           style="padding: 0.8rem 1.5rem;"
-          rel="nofollow">
+          rel="nofollow"
+          data-event="orderClickOffers">
           <?= $orderLinkText ?> online
         </a>
       </div>
