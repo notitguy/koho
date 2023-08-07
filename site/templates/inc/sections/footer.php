@@ -28,6 +28,7 @@ $chevronIcon = $assets ."icons/chevron-down.svg";
     </form> -->
     <h3><?= $mediaLinksTitle ?></h3>
     <div class="press">
+      <a href="https://forbes.cz/zadne-kure-kohoutek-italove-uci-prahu-na-netradicni-krupave-operence/" target="_blank" rel="nofollow">Forbes</a>
       <a href="https://www.podbean.com/ew/pb-5mr45-11216ca" target="_blank" rel="nofollow">Prague Times</a>
       <a href="https://www.expats.cz/czech-news/article/best-things-to-do-in-prague-this-weekend-june-18-20" target="_blank" rel="nofollow">Expats.cz</a>
       <a href="https://refresher.cz/103161-Jaka-jsou-nejlepsi-kureci-kridelka-v-Praze-Mame-poradne-paliveho-viteze" target="_blank" rel="nofollow">Refresher</a>
