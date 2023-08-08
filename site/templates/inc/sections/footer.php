@@ -1,5 +1,7 @@
 <?php namespace ProcessWire;
 
+$forbesScreen = $assets ."images/photos/forbes-screen.webp";
+
 $catecho = $assets ."images/partners/catecho-logo.png";
 $saniplast = $assets ."images/partners/saniplast_logo.png";
 $somoto = $assets ."images/partners/somotocz.png";
@@ -18,7 +20,7 @@ $chevronIcon = $assets ."icons/chevron-down.svg";
     
     </div>
   </section>
-  <section>
+  <section style="display: grid; grid-template-columns: 1fr 1fr;">
     <!-- <h3>Stay in touch</h3>
     <p>Get notified about our events and offers.</p>
     <form action="">
@@ -27,7 +29,7 @@ $chevronIcon = $assets ."icons/chevron-down.svg";
        <span><input type="checkbox" name="checkbox"> I agree to terms and conditions.</span>
     </form> -->
     <h3><?= $mediaLinksTitle ?></h3>
-    <div class="press">
+    <div class="press" style="grid-column: 1">
       <a href="https://forbes.cz/zadne-kure-kohoutek-italove-uci-prahu-na-netradicni-krupave-operence/" target="_blank" rel="nofollow">Forbes</a>
       <a href="https://www.podbean.com/ew/pb-5mr45-11216ca" target="_blank" rel="nofollow">Prague Times</a>
       <a href="https://www.expats.cz/czech-news/article/best-things-to-do-in-prague-this-weekend-june-18-20" target="_blank" rel="nofollow">Expats.cz</a>
@@ -36,6 +38,9 @@ $chevronIcon = $assets ."icons/chevron-down.svg";
       <a href="https://www.youtube.com/watch?v=FJwV71gPzTA" target="_blank" rel="nofollow">EATS - Kohoutek</a>
       <a href="https://www.praha3.cz/getFile/id:1164348/%C4%8Cervenec+-+srpen+2023.pdf" target="_blank" rel="nofollow">Radniční noviny</a>
     </div>
+    <a href="https://forbes.cz/zadne-kure-kohoutek-italove-uci-prahu-na-netradicni-krupave-operence/" target="_blank" rel="nofollow" style="grid-column: 2; grid-row: 1/3;">
+      <img src="<?= $forbesScreen ?>" width="300" alt="">
+    </a>
   </section>
   <section>
     <h3><?= $partnersTitle ?></h3>
