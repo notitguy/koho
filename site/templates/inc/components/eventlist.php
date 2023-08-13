@@ -14,7 +14,7 @@
         <img src="<?= $assets . "icons/calendar.svg" ?>" width="20" height="20" alt="">
       </a> -->
     </div>
-    <img src="<?= $assets ."/images/photos/events/pride-koho.webp"?>" width="500" alt="">
+    <!-- <img src="<?= $assets ."/images/photos/events/pride-koho.webp"?>" width="500" alt=""> -->
     <?php
     $today = strtotime("-12 hours"); // get yesterday's date to hide expired events
     $limit = $page->template->name === "home" ? 3 : 20; // limit "homepage events to 3, events page to 20"
