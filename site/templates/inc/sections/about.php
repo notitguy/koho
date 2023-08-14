@@ -18,8 +18,24 @@ $galleryIcon = $assets ."icons/gallery.svg";
     </div> -->
     <div class="about__video2">
       <div class="body">
-        <h3><?= $videoBlockTitle ?></h3>
-        <p><?= $videoBlockBody ?></p>
+        <?= $pages->get(1050)->body ?>
+        <div class="gallery pswp-gallery" id="gallery--events">
+          <?php foreach ($pages->get(1050)->gallery as $image) : ?>
+          <a href="<?= $image->url ?>"
+          data-pswp-width="<?= $image->width(); ?>" 
+          data-pswp-height="<?= $image->height(); ?>"
+          target="_blank">
+            <div>
+            <?php $imgHeight = $image === $pages->get(1050)->gallery->first() ? 432 : 192; ?>
+              <img src="<?= $image->size(288, $imgHeight)->url ?>" width="288" height="<?= $imgHeight ?>" alt="Kohoutek Restaurant" loading="lazy">
+            </div>
+            <?php if($image === $pages->get(1050)->gallery->eq(2)) {
+              $qty = $pages->get(1050)->gallery->count();
+              echo "<span>+". ($qty-3). "</span>";
+            } ?>
+          </a>
+          <?php endforeach; ?>
+        </div>
       </div>
       <div class="videos">
         <video autoplay muted loop >
@@ -29,7 +45,7 @@ $galleryIcon = $assets ."icons/gallery.svg";
           <source src="<?= $assets . "video/IMG_0732.MP4" ?>" type=video/mp4>
         </video>
       </div>
-      </div>
+    </div>
     <div class="about__body">
       <h2><?= $page->heading_about ?></h2>
       <?= $page->body_about ?>
@@ -49,9 +65,9 @@ $galleryIcon = $assets ."icons/gallery.svg";
           Gallery
         </a> -->
       </div>
-      </div>
+    </div>
     <div class="gallery pswp-gallery" id="gallery--home">
-    <?php foreach ($page->gallery as $image) : ?>
+      <?php foreach ($page->gallery as $image) : ?>
       <a href="<?= $image->url ?>"
       data-pswp-width="<?= $image->width(); ?>" 
       data-pswp-height="<?= $image->height(); ?>"
@@ -65,7 +81,7 @@ $galleryIcon = $assets ."icons/gallery.svg";
           echo "<span>+". ($qty-3). "</span>";
         } ?>
       </a>
-    <?php endforeach; ?>
+      <?php endforeach; ?>
     </div>
 
   </article>

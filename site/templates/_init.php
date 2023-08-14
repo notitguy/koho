@@ -57,8 +57,3 @@ $seeMore = _x('More info', 'site');
 
 $mediaLinksTitle = _x('They wrote about us', 'site');
 $partnersTitle = _x('Our Partners', 'site');
-
-// Multi video text
-
-$videoBlockTitle = _x('Kohoutek around you', 'other text');
-$videoBlockBody = _x('We regularly participate in food markets and various festivals. Be sure not to miss it!', 'other text');

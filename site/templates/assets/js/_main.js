@@ -158,7 +158,7 @@ import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
 
 const lightbox = new PhotoSwipeLightbox({
   // may select multiple "galleries"
-  gallery: '#gallery--home, #gallery--furniture',
+  gallery: '#gallery--home, #gallery--furniture, #gallery--events',
 
   // Elements within gallery (slides)
   children: 'a',
