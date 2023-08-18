@@ -18,11 +18,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="#footer"><?= $findUs ?></a>
     </nav>
     <a href="<?= $home->url?>" class="logo">
-      <img src="<?= $logoGay ?>" width="115" alt="Kohoutek">
+      <img src="<?= $logo ?>" width="115" alt="Kohoutek">
     </a>
     <nav class="mobile">
       <a href="<?= $home->url?>" class="mobile-logo">
-        <img src="<?= $logoGay ?>" alt="Kohoutek" width="48">
+        <img src="<?= $logoResponsive ?>" alt="Kohoutek" width="48">
       </a>
       <a href="<?= $info->reservation_link ?>" class="btn --secondary" target="_blank" rel="nofollow" data-event="reserveClickNav"><?= $reservationLinkText ?></a>
       <?php include ($components ."language-switcher.php") ?>
