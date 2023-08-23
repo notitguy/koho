@@ -1,0 +1,11 @@
+site/assets/cache
+site/assets/sessions
+site/assets/logs
+site/assets/files
+
+node_modules
+.parcel-cache
+dist
+static
+
+.vscode/sftp.json

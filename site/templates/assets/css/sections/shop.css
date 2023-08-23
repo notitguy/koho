@@ -1,0 +1,90 @@
+section#shop {
+  & article {
+    display: flex;
+    gap: var(--gutter-l);
+  }
+  & h2 {
+    width: fit-content;
+    max-width: 400px;
+    color: var(--c-primary);
+    transform: rotate(-1deg);
+    margin-bottom: var(--gutter-l);
+  }
+  & a.btn {
+    margin-top: var(--gutter-l);
+  }
+  & .shop__tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter);
+
+    & figure {
+      width: 45%;
+      overflow: hidden;
+      background-color: var(--c-primary-70);
+      border-radius: var(--corner);
+      border: 2px solid var(--c-primary);
+      transform: skew(-1deg, -1deg);
+      transition-property: box-shadow, transform;
+      transition-duration: var(--duration);
+      transition-timing-function: var(--easing);
+      cursor: pointer; /*if there are no links*/
+
+      &:hover {
+        box-shadow: 4px 5px var(--c-primary);
+        transform: skew(-1deg, -1deg)translate(-4px,-5px)
+      }
+        
+      & img {
+        height: auto;
+      }
+
+      & figcaption {
+        padding: var(--gutter-s);
+        color: var(--c-primary);
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.pswp__custom-caption {
+  background-color: rgb(80 80 80 / 50%);
+  color: #fff;
+  width: calc(100% - 32px);
+  max-width: 400px;
+  padding: var(--gutter);
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+}
+.pswp__custom-caption a {
+  color: #fff;
+  text-decoration: underline;
+}
+.hidden-caption-content {
+  display: none;
+}
+
+@media (width < 768px) {
+  section#shop article {
+    flex-direction: column;
+
+    & figcaption {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (width > 768px) {
+
+  section#shop article {
+
+    & .shop__tiles figure {
+      width: 171px;
+    }
+  }
+}
