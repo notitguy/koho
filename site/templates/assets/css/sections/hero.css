@@ -1,0 +1,40 @@
+section.hero {
+  /* height: 68vh; */
+  row-gap: var(--gutter-l);
+  justify-content: space-between;
+  margin-bottom: -4rem;
+
+  & .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gutter);
+    text-align: center;
+    margin-top: 4vmax;
+  }
+  & h1 {
+    color: var(--c-primary-70);
+  }
+  & .cta {
+    display: flex;
+    align-items: center;
+    gap: var(--gutter);
+    z-index: 2;/*on top of plate*/
+  }
+}
+
+@media (width >= 768px) {
+  section.hero {
+    /* min-height: 95vh; */
+    
+    & .container {
+      /* max-width: 40rem; */
+    }
+  }
+}
+
+@media (width < 768px) {
+  .hero .cta .car {
+    display: none;
+  }
+}

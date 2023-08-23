@@ -1,0 +1,41 @@
+{
+  "name": "koho",
+  "description": "",
+  "version": "1.0.0",
+  "author": "notitguy",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notitguy/koho.git"
+  },
+  "bugs": {
+    "url": "https://github.com/notitguy/koho/issues"
+  },
+  "homepage": "https://github.com/notitguy/koho#readme",
+  "targets": {
+    "default": {
+      "distDir": "./dist"
+    }
+  },
+  "scripts": {
+    "watch": "concurrently \"npm:watch-*\"",
+    "build": "concurrently \"npm:build-*\"",
+    "watch-css": "parcel watch site/templates/assets/css/_main.css",
+    "watch-js": "parcel watch site/templates/assets/js/_main.js --no-hmr",
+    "build-css": "parcel build site/templates/assets/css/_main.css",
+    "build-js": "parcel build site/templates/assets/js/_main.js"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "parcel": "^2.8.3"
+  },
+  "@parcel/transformer-css": {
+    "drafts": {
+      "nesting": true
+    }
+  },
+  "dependencies": {
+    "photoswipe": "^5.3.7",
+    "swiper": "^9.1.0"
+  }
+}

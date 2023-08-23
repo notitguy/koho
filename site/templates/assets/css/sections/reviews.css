@@ -1,0 +1,90 @@
+.reviews {
+  display: grid;
+  overflow-x: clip;
+
+  & .reviews__slider {
+    width: 270px;
+    height: 320px;
+    
+    & .swiper-slide {
+      background-color: var(--c-bg-90);
+      display: flex;
+      flex-direction: column;
+      gap: var(--gutter-s);
+      align-items: center;
+      /* justify-content: center; */
+      padding: 2rem;
+      border: 2px solid var(--c-primary);
+      border-radius: var(--corner);
+      /* transition-property: height;
+      transition-duration: 1s!important;
+      transition-timing-function: var(--easing); */
+
+      & .swiper-slide-shadow {
+        background-color: hsl(33.19deg 55.29% 50% / 35%);
+      }
+    }
+    & span {
+      background-color: var(--c-primary-80);
+      border: 1px solid var(--c-primary);
+      border-radius: 50%;
+      color: var(--c-primary);
+      width: 3rem; height: 3rem;
+      display: grid;
+      place-content: center;
+      font-weight: 500;
+    }
+    & .stars {
+      background-image: url(../../icons/star.svg);
+      background-size: 24px 24px;
+      height: 22px;
+      top: 1px;
+      width: 120px;
+    }
+    & .review__text {
+      height: 130px; /*will change on click*/
+      font-size: 0.9rem;
+      font-style: normal;
+      cursor: pointer;
+      transition-property: height;
+      transition-duration: var(--duration);
+      transition-timing-function: var(--easing);
+      /*hide text*/
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+       
+      & p {
+        margin: 0;
+      } 
+
+      &[data-expanded="true"] {
+        -webkit-line-clamp: unset;
+      }
+      &::before {
+        content: '❝';
+        color: var(--c-primary-50);
+        opacity: 0.7;
+        font-size: 3rem;
+        display: block;
+        height: 1.5rem;
+        position: relative;
+        top: -1.2rem;
+      }
+    }
+  }
+}
+
+@media (width > 768px) {
+  .reviews {
+    grid-template-columns: 2fr 4fr;
+  }
+}
+
+@media (width < 768px) {
+  .reviews__slider {
+    margin-top: var(--gutter);
+  }
+}
