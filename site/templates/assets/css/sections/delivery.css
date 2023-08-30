@@ -27,3 +27,77 @@
     }
   }
 }
+
+/*Offers page*/
+
+body.offers {
+
+  & article {
+    display: flex;
+    gap: var(--gutter);
+  }
+}
+
+.special-offer {
+  & div {
+    display: grid;
+    place-items: center;
+    justify-content: start;
+    transform: rotate(350deg);
+    margin-bottom: var(--gutter);
+
+    & em {
+      grid-area: 1/1;
+      color: var(--c-primary-90);
+      font-family: 'gsm';
+      font-style: normal;
+      z-index: 0;
+      animation: blink 2s var(--easing) infinite;
+    }
+    
+    &::before {
+      grid-area: 1/1;
+      content: "";
+      width: 100px;
+      height: 55px;
+      background-color: orangered;
+      clip-path: polygon(0% 0%, 50% 100%, 100% 0%, 0% 50%, 100% 100%, 50% 0%, 0% 100%, 100% 50%);
+    }
+  }
+  & span {
+    font-size: 6rem;
+    font-family: 'gsm';
+    color: var(--c-accent);
+    letter-spacing: -0.4rem;
+  }
+  & a.btn {
+    background-color: orangered;
+    color: var(--c-primary-90);
+    margin-top: var(--gutter);
+  }
+}
+
+@keyframes blink {
+  0%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+@media (width < 768px) {
+  body.offers {
+
+    & article {
+      flex-direction: column;
+    }
+
+    & .delivery-media {
+      max-height: 200px;
+      display: flex;
+
+      & img {
+        object-fit: cover;
+        object-position: 50% 35%;
+      }
+    }
+  }
+}

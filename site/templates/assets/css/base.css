@@ -268,31 +268,3 @@ address {
 .socials {
   gap: var(--gutter);
 }
-
-/* extra pages */
-
-body.offers {
-
-  & article {
-    display: flex;
-    gap: var(--gutter);
-  }
-}
-
-@media (width < 768px) {
-  body.offers {
-
-    & article {
-      flex-direction: column-reverse;
-    }
-
-    & .delivery-media {
-      max-height: 200px;
-      display: flex;
-
-      & img {
-        object-fit: cover;
-      }
-    }
-  }
-}

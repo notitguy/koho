@@ -8,14 +8,16 @@ $deliveryImage = $assets ."/images/photos/delivery.jpg";
   <div class="border --80"><div></div></div>
   <section>
     <article class="container">
-      <div>
+      <div class="special-offer">
         <?= $page->body ?>
         <a href="<?= $orderLink ?>"
           class="btn --primary"
           style="padding: 0.8rem 1.5rem;"
           rel="nofollow"
+          target="_blank"
           data-event="orderClickOffers">
-          <?= $orderLinkText ?> online
+          <?= $orderLinkText ?>
+          <img src="/site/templates/assets/icons/bag.svg" alt="" loading="lazy">
         </a>
       </div>
       <div class="delivery-media frame">

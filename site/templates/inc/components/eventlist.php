@@ -19,16 +19,16 @@
     $today = strtotime("-12 hours"); // get yesterday's date to hide expired events
     $limit = $page->template->name === "home" ? 3 : 20; // limit "homepage events to 3, events page to 20"
     
-    foreach ($events->eventlist->find("time>$today, limit=$limit, sort=time") as $event) : ?>
+    foreach ($events->eventlist->find("time|time_end>$today, limit=$limit, sort=time") as $event) : ?>
 
       <?php
         // localised dates
         $locale = $user->language->getLocale();
 
         if ($locale === "cs_CZ.utf-8") {
-          $pattern = "eeee, d. MMMM - kk:mm";
+          $pattern = "eeee, d. MMMM, kk:mm";
         } else {
-          $pattern = "eeee, MMMM d - kk:mm";
+          $pattern = "eeee, MMMM d, kk:mm";
         }
         
         $fmt = datefmt_create( // Time formatter
@@ -40,7 +40,10 @@
           $pattern
         );
         $input = strtotime($event->time); // get event time
+        $inputEnd = strtotime($event->time_end);
+
         $eventTimeLC = datefmt_format($fmt, $input); // format event time
+        $eventEndTimeLC = datefmt_format($fmt, $inputEnd);
         
         // icons
         $eventIconType = $event->event_icon->title;
@@ -72,13 +75,20 @@
             // event flyer
             $flyer = $event->event_flyer;
             $flyerText = $flyer ? "<a href='$flyer->url' class='btn'>$seeMore</a>" : null;
+          
             ?>
 
       <div class="event__card">
         <div class="event__header">
           
           <img src="<?= $eventIcon  ?>" alt="" width="24" height="24">
-          <span><?= $eventTimeLC ?> <?= $bookedText ?> </span>
+          <span><?= $eventTimeLC ?> 
+            <?php if ($event->time_end) {
+              echo "— $eventEndTimeLC";
+            }
+            ?>
+            <?= $bookedText ?>
+          </span>
           <h3><?= $event->heading ?></h3>
           <i></i>
         </div>
