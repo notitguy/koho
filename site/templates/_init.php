@@ -57,3 +57,5 @@ $seeMore = _x('More info', 'site');
 
 $mediaLinksTitle = _x('They wrote about us', 'site');
 $partnersTitle = _x('Our Partners', 'site');
+
+$featuredMediaTitle = _x('Featured on', 'site');

@@ -8,6 +8,7 @@ $galleryIcon = $assets ."icons/gallery.svg";
 <div class="border --80"><div></div></div>
 <section>
   <!-- <div class="banner container">This is a place for a<span>BANNER/FLYER</span>It won't show, if there is no banner.</div> -->
+  <?php include ($components ."featured-media.php") ?>
   <?php include ($components ."menu.php") ?>
   <?php include ($components ."running-text.php") ?>
   <?php include ($components ."eventlist.php") ?>

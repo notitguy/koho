@@ -1,0 +1,15 @@
+.featured-media {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  overflow-x: auto;
+  margin-bottom: -1.5rem;
+  
+  & p {
+    font-family: 'gsm';
+    min-width: fit-content;
+  }
+  & img {
+    filter: brightness(0) opacity(0.3);
+  }
+}
