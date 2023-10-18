@@ -2,12 +2,12 @@
   <article class="container">
     <div class="eventlist__body">
       <h2><?= $events->heading ?></h2>
-      <?= $events->body_about ?>
+      <!-- <?= $events->body_about ?> -->
       <?php
         $banner = $events->banner;
         if($banner) {
           // $thumb = $image->size(100, 100);
-          echo "<a href='$banner->url' target='_blank'><img src='$banner->url' alt='Kohoutek events'></a>";
+          echo "<img src='$banner->url' style='margin-block: var(--gutter);' alt='Kohoutek events'>";
         }
         ?>
       <!-- <a href="#" class="btn">More events
