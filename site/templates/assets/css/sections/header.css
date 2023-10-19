@@ -165,7 +165,7 @@ nav.mobile.--open .nav-icon span {
   }
 }
 
-.logo img, .mobile-logo img {
+/* .logo img,*/ .mobile-logo img { 
   filter: invert(86%) sepia(22%) saturate(829%) hue-rotate(329deg) brightness(91%) contrast(88%);
   /* filter: invert(74%) sepia(72%) saturate(213%) hue-rotate(347deg) brightness(93%) contrast(85%); */
 }

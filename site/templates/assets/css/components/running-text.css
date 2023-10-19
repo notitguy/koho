@@ -32,7 +32,7 @@
 
     &::after {
       content: '';
-      background-image: url(../../images/logo-responsive.svg);
+      background-image: url(../../images/logos/logo-responsive.svg);
       background-size: 100% 100%;
       width: 18px;
       display: inline-block;
