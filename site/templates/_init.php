@@ -60,3 +60,8 @@ $mediaLinksTitle = _x('They wrote about us', 'site');
 $partnersTitle = _x('Our Partners', 'site');
 
 $featuredMediaTitle = _x('Featured on', 'site');
+
+// Temporary
+$halloweenP = _x('Come to taste the special', 'site');
+$halloweenSpan = _x('Halloween edition cockerel!', 'site');
+$halloweenButton = _x('Reserve your table', 'site');

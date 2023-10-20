@@ -8,7 +8,7 @@ $bagIcon =  $assets ."icons/bag.svg";
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8CZBP2"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<header>
+<header class="halloween">
   <div class="container">
     <nav class="desktop">
       <a href="<?= $home->url ?>#menu"><?= $menuWord ?></a>
