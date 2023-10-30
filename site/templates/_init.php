@@ -61,6 +61,8 @@ $partnersTitle = _x('Our Partners', 'site');
 
 $featuredMediaTitle = _x('Featured on', 'site');
 
+$weAreHiring = _x('We are hiring!', 'site');
+
 // Temporary
 $halloweenP = _x('Come to taste the special', 'site');
 $halloweenSpan = _x('Halloween edition cockerel!', 'site');

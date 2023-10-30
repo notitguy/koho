@@ -1,7 +1,7 @@
 <?php namespace ProcessWire;
 
 $iconBag = $assets ."icons/bag.svg";
-$deliveryImage = $assets ."images/photos/delivery.jpg";
+$deliveryImage = $assets ."images/photos/delivery.webp";
 
 ?>
 <div class="border --90"><div></div></div>
@@ -17,7 +17,7 @@ $deliveryImage = $assets ."images/photos/delivery.jpg";
       </div>
     </div>
     <div class="delivery-media frame">
-      <img src="<?= $deliveryImage ?>" alt="">
+      <img src="<?= $deliveryImage ?>" alt="" width="600" height="400" loading="lazy">
     </div>
   </article>
 </section>

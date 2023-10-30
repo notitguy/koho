@@ -1,6 +1,7 @@
 <?php namespace ProcessWire;
 
-$menuIcon = $assets ."icons/menu.svg";
+// $menuIcon = $assets ."icons/menu.svg";
+$chefIcon = $assets ."icons/chef-hat.svg";
 $locationIcon = $assets ."icons/location.svg";
 $galleryIcon = $assets ."icons/gallery.svg";
 ?>
@@ -53,13 +54,13 @@ $galleryIcon = $assets ."icons/gallery.svg";
       <div class="tiles">
         <?php $menuUrl = $page->menu_repeater->first()->menu_file->url;
         ?>
-        <a href="<?= $menuUrl ?>" target="_blank" class="btn">
-          <img src="<?= $menuIcon ?>" width="32" height="32" alt="">
-          Menu
-        </a>
         <a href="#footer" class="btn">
           <img src="<?= $locationIcon ?>" width="32" height="32" alt="">
           <?= $findUs ?>
+        </a>
+        <a href="mailto:<?= $email ?>" class="btn" style="background-color:#bdd5bd;">
+          <img src="<?= $chefIcon ?>" width="32" height="32" alt="">
+          <?= $weAreHiring ?>
         </a>
         <!-- <a href="#">
           <img src="<?= $galleryIcon ?>" width="32" height="32" alt="">

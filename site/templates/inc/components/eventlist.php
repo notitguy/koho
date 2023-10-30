@@ -26,9 +26,9 @@
         $locale = $user->language->getLocale();
 
         if ($locale === "cs_CZ.utf-8") {
-          $pattern = "eeee, d. MMMM, kk:mm";
+          $pattern = "eeee, d.MM, kk:mm";
         } else {
-          $pattern = "eeee, MMMM d, kk:mm";
+          $pattern = "eeee, MMM d, kk:mm";
         }
         
         $fmt = datefmt_create( // Time formatter
