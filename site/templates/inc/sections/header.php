@@ -8,7 +8,7 @@ $bagIcon =  $assets ."icons/bag.svg";
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8CZBP2"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<header class="halloween">
+<header>
   <div class="container">
     <nav class="desktop">
       <a href="<?= $home->url ?>#menu"><?= $menuWord ?></a>
@@ -18,7 +18,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="#footer"><?= $findUs ?></a>
     </nav>
     <a href="<?= $home->url?>" class="logo">
-      <img src="<?= $logoHalloween ?>" width="115" alt="Kohoutek">
+      <img src="<?= $logo ?>" width="115" alt="Kohoutek">
     </a>
     <nav class="mobile">
       <a href="<?= $home->url?>" class="mobile-logo">

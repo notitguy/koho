@@ -2,7 +2,7 @@
   <article class="container">
     <div class="eventlist__body">
       <h2><?= $events->heading ?></h2>
-      <!-- <?= $events->body_about ?> -->
+      <?= $events->body_about ?>
       <?php
         $banner = $events->banner;
         if($banner) {
