@@ -1,5 +1,13 @@
+<?php 
+  $now = time();
+  $expires = strtotime($info->time_end);
+?>
+
 <address>
   <ul class="opening-hours">
+  <?php if ($now < $expires) : ?>
+    <li style="margin-bottom: var(--gutter);max-width: 17rem;"><em><?= $info->special_hours ?></em></li>
+  <?php endif; ?>
     <li><?= $info->days_open1 ?>: <span><?= $info->hours_open1 ?></span></li>
     <li><?= $info->days_open2 ?>: <span><?= $info->hours_open2 ?></span></li>
   </ul>
