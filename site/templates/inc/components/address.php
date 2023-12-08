@@ -14,7 +14,7 @@
   <a href="https://goo.gl/maps/fcWpzhbJtDf5yh3z7" target="_blank" rel="nofollow" class="location">
     <img src="<?= $locationIcon ?>" width="18" alt="" loading="lazy"> <?= $address ?>
   </a>
-  <!-- <a href="tel:<?= $phone ?>"><?= $phone ?></a> -->
+  <a href="tel:<?= $phone ?>"><?= $phone ?></a>
   <a href="mailto:<?= $email ?>" style="margin-top: -1rem;"><?= $email ?></a>
   <div class="socials">
     <a href="https://www.instagram.com/kohoutek_resto/" target="_blank" rel="nofollow"><img width="18" height="18" src="<?= $instagramIcon ?>" alt="" loading="lazy"></a>
