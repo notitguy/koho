@@ -17,7 +17,7 @@
 <!DOCTYPE html>
 <html lang="<?php echo _x('cs', 'HTML language code'); ?>">
 	<?php include($sections ."_head.php"); ?>
-	<body class="<?= $page->template->name ?>">
+	<body class="<?= $page->template->name ?>" style="background-color: #940b10;">
 		<?php include($sections ."header.php"); ?>
 		<main pw-id="content"></main>
 		<?php include($sections ."footer.php"); ?>

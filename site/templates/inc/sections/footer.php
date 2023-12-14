@@ -11,8 +11,8 @@ $chevronIcon = $assets ."icons/chevron-down.svg";
 
 ?>
 
-<div class="border --dark"><div></div></div>
-<footer class="container" id="footer">
+<!-- <div class="border --dark"><div></div></div> -->
+<footer class="container" id="footer" style="margin-top: 7rem;">
   <section>
     <h2><?= $businessName ?></h2>
       <?php include($components ."address.php"); ?>
@@ -54,6 +54,9 @@ $chevronIcon = $assets ."icons/chevron-down.svg";
 </footer>
 
 <div class="overlay"></div>
+
+<div class="snow-container"></div>
+<!-- <div style="height: 200vh;"></div> -->
 
 <?php // https://medium.com/@erikritter/css-snippets-add-a-texture-overlay-to-an-entire-webpage-b0bfdfd02c45 ?>
 <div class="pattern"></div>
