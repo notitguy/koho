@@ -214,12 +214,12 @@ if (galFurniture) {
 }
 
 // Snow https://codepen.io/ethancopping/pen/ExrGYGG
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM fully loaded and parsed");
   const snowContainer = document.querySelector(".snow-container");
 
   const particlesPerThousandPixels = 0.1;
-  const fallSpeed = 1.25;
+  const fallSpeed = 0.25;
   const pauseWhenNotActive = true;
   const maxSnowflakes = 200;
   const snowflakes = [];
@@ -295,4 +295,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.addEventListener("visibilitychange", handleVisibilityChange);
-});
+// });

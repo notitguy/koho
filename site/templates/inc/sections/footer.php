@@ -1,6 +1,6 @@
 <?php namespace ProcessWire;
 
-$forbesScreen = $assets ."images/photos/forbes-screen.webp";
+$forbesScreen = $assets ."images/photos/forbes-screenshot.webp";
 
 $catecho = $assets ."images/partners/catecho-logo.png";
 $saniplast = $assets ."images/partners/saniplast_logo.png";
