@@ -5,7 +5,7 @@
 ?>
 
 <main pw-id="content">
-	<?php include($sections ."heroes/hero-christmas.php"); ?>
+	<?php include($sections ."heroes/hero.php"); ?>
 	<?php include($sections ."about.php"); ?>
 	<?php include($sections ."cockerel.php"); ?>
 	<?php include($sections ."shop.php"); ?>

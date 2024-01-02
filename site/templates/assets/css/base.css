@@ -273,7 +273,7 @@ address {
 }
 
 /* temp */
-.hero.christmas {
+/* .hero.christmas {
   position: relative;
 
   & > img {
@@ -284,4 +284,4 @@ address {
     right: 0;
     z-index: -1;
   }
-}
+} */

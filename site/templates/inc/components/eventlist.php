@@ -13,8 +13,11 @@
       <!-- <a href="#" class="btn">More events
         <img src="<?= $assets . "icons/calendar.svg" ?>" width="20" height="20" alt="">
       </a> -->
+      <!-- <a href="https://www.kohoutekresto.cz/site/assets/files/1070/menu-capodanno-2024.pdf" target="_blank" style="display:block; margin-top: 1.5rem" >
+        <img src="<?= $assets ."/images/photos/events/NYE24-sm.jpg"?>" width="500" alt="">
+      </a> -->
     </div>
-    <!-- <img src="<?= $assets ."/images/photos/events/pride-koho.webp"?>" width="500" alt=""> -->
+
     <?php
     $today = strtotime("-12 hours"); // get yesterday's date to hide expired events
     $limit = $page->template->name === "home" ? 3 : 20; // limit "homepage events to 3, events page to 20"

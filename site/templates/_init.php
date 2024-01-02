@@ -28,8 +28,8 @@ $logoHalloween = $assets ."images/logos/logo-halloween.svg";
 $logoGay = $assets ."images/logos/logo-gay.svg";
 $logoResponsiveGay = $assets ."images/logos/logo-responsive-gay.svg";
 $logoChristmas = $assets ."images/logos/logo-christmas.svg";
-$logo = $logoChristmas;
-$logoResponsive = $logoChristmas;
+// $logo = $logoChristmas;
+// $logoResponsive = $logoChristmas;
 
 $locationIcon = $assets ."icons/location.svg";
 $instagramIcon = $assets ."icons/instagram.svg";
