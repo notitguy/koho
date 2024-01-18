@@ -25,6 +25,10 @@ section#menu {
     border-radius: var(--corner);
     overflow: hidden;
     text-decoration: none;
+
+    &:nth-child(3) i {
+      display: none;
+    }
     
     & img {
       grid-column: 1/3;
