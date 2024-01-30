@@ -155,4 +155,4 @@ window.onscroll = function() {
 import("./gallery.js");
 
 // Snow
-import("./snow.js");
+// import("./snow.js");
