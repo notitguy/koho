@@ -55,8 +55,7 @@ $chevronIcon = $assets ."icons/chevron-down.svg";
 
 <div class="overlay"></div>
 
-<div class="snow-container"></div>
-<!-- <div style="height: 200vh;"></div> -->
+<!-- <div class="snow-container"></div> -->
 
 <?php // https://medium.com/@erikritter/css-snippets-add-a-texture-overlay-to-an-entire-webpage-b0bfdfd02c45 ?>
 <div class="pattern"></div>

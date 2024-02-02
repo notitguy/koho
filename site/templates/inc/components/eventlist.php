@@ -2,7 +2,7 @@
   <article class="container">
     <div class="eventlist__body">
       <h2><?= $events->heading ?></h2>
-      <?= $events->body_about ?>
+      <!-- <?= $events->body_about ?> -->
       <?php
         $banner = $events->banner;
         if($banner) {
@@ -13,9 +13,9 @@
       <!-- <a href="#" class="btn">More events
         <img src="<?= $assets . "icons/calendar.svg" ?>" width="20" height="20" alt="">
       </a> -->
-      <!-- <a href="https://www.kohoutekresto.cz/site/assets/files/1070/menu-capodanno-2024.pdf" target="_blank" style="display:block; margin-top: 1.5rem" >
-        <img src="<?= $assets ."/images/photos/events/NYE24-sm.jpg"?>" width="500" alt="">
-      </a> -->
+      <a href="https://www.kohoutekresto.cz/site/assets/files/1071/2024_menu_san_valentino_-_a4_def_en-cz.pdf" target="_blank" style="display:block; margin-top: 1.5rem" >
+        <img src="<?= $assets ."/images/photos/events/sv24.webp"?>" width="500" alt="">
+      </a>
     </div>
 
     <?php
