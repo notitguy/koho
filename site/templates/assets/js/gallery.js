@@ -1,59 +1,42 @@
-// Include Lightbox 
-import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
+// Include Lightbox
+import PhotoSwipeLightbox from "photoswipe/dist/photoswipe-lightbox.esm.js";
 
+// Select all galleries
+const galleries = document.querySelectorAll(".pswp-gallery");
+const gallerySelector = []; // Empty array to store selectors
+
+galleries.forEach((gallery) => {
+  gallerySelector.push(`#${gallery.id}`); // Add each gallery ID to the array
+});
+
+const finalSelector = gallerySelector.join(","); // Join IDs with commas
+
+// PhotoSwipe
 const lightbox = new PhotoSwipeLightbox({
   // may select multiple "galleries"
-  gallery: '#gallery--home, #gallery--furniture, #gallery--events',
-
+  gallery: finalSelector,
   // Elements within gallery (slides)
-  children: 'a',
-
+  children: "a",
   // setup PhotoSwipe Core dynamic import
-  pswpModule: () => import('photoswipe')
+  pswpModule: () => import("photoswipe"),
 });
 lightbox.init();
 
-const galFurniture = document.querySelector('#galFurniture');
+// Shop Gallery
+// Get all galleries that have number in the ID tag
+const numGalleriesFilter = gallerySelector.filter((gallery) =>
+  /\d/.test(gallery)
+);
 
-if (galFurniture) {
-  
-  galFurniture.addEventListener('click', function() {
-    // load gallery from a single thumb
-    lightbox.loadAndOpen(0, {
-      gallery: document.querySelector('#gallery--furniture')
-    })
-    // captions
-    lightbox.on('uiRegister', function() {
-      lightbox.pswp.ui.registerElement({
-        name: 'custom-caption',
-        order: 9,
-        isButton: false,
-        appendTo: 'root',
-        html: 'Caption text',
-        onInit: (el, pswp) => {
-          lightbox.pswp.on('change', () => {
-            const currSlideElement = lightbox.pswp.currSlide.data.element;
-            let captionHTML = '';
-            if (currSlideElement) {
-              // const hiddenCaption = currSlideElement.querySelector('.hidden-caption-content');
-              const spanCaption = currSlideElement.querySelector('span');
-              if (spanCaption) {
-                // get caption from alt attribute
-                captionHTML = spanCaption.innerText;
-              }
-              // if (hiddenCaption || spanCaption) {
-              //   // get caption from element with class hidden-caption-content
-              //   captionHTML = hiddenCaption.innerHTML;
-              // } else {
-              //   // get caption from alt attribute
-              //   captionHTML = spanCaption.innerText;
-              // }
-            }
-            el.innerHTML = captionHTML || '';
-          });
-        }
+const numGalleries = document.querySelectorAll(numGalleriesFilter);
+
+numGalleries.forEach((item) => {
+  if (item) {
+    item.previousElementSibling.addEventListener("click", function () {
+      // load gallery from a single thumb
+      lightbox.loadAndOpen(0, {
+        gallery: item,
       });
     });
-  });
-
-}
+  }
+});
