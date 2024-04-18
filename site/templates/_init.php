@@ -22,7 +22,7 @@ $address = "Slezská 780/49, Praha 3 - Vinohrady";
 $phone = "+420 602 760 996";
 $email = "info@kohoutekresto.cz";
 
-$logo = $assets ."images/logos/logo.svg";
+$logo = $assets ."images/logos/logo-ristorante.svg";
 $logoResponsive = $assets ."images/logos/logo-responsive.svg";
 $logoHalloween = $assets ."images/logos/logo-halloween.svg";
 $logoGay = $assets ."images/logos/logo-gay.svg";

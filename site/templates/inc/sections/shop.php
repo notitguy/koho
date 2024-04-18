@@ -21,82 +21,36 @@ $pdfParfume = $assets ."download/cat_lpdo_2021.pdf";
       <!-- <h3>Online shop coming soon!</h3> -->
     </div>
     <section class="shop__tiles">
+    <?php foreach ($page->shop_repeater->find("limit=4") as $shop) : ?>
+      <?php if($shop->shop_switcher === 0 && $shop->shop_pdf == null) : ?>
       <figure>
-      <a href="<?= $pdfMoto ?>" class="shop__product">
-        <img src="<?= $shopBike ?>" width="266" height="267" alt="Shop Kohoutek" loading="lazy">
-        <figcaption>Motorcycles</figcaption>
-      </a>
+        <img src="<?= $shop->shop_image->webpUrl ?>" width="266" height="267" alt="Shop Kohoutek" loading="lazy">
+        <figcaption><?= $shop->heading_shop ?></figcaption>
       </figure>
+      <?php elseif($shop->shop_switcher === 0) : ?> 
       <figure>
-        <!-- <a href="" class="shop__product"> -->
-          <img src="<?= $shopArt ?>" width="267" height="267" alt="Shop Kohoutek" loading="lazy">
-          <figcaption>Art</figcaption>
-        <!-- </a> -->
+        <a href="<?= $shop->shop_pdf->url ?>" class="shop__product">
+          <img src="<?= $shop->shop_image->webpUrl ?>" width="266" height="267" alt="Shop Kohoutek" loading="lazy">
+          <figcaption><?= $shop->heading_shop ?></figcaption>
+        </a>
       </figure>
-      <figure id="galFurniture">
-      <!-- <a href="" class="shop__product"> -->
-        <img src="<?= $shopChair ?>" width="267" height="267" alt="Shop Kohoutek" loading="lazy">
-        <figcaption>Furniture</figcaption>
-      <!-- </a> -->
-      </figure>
+      <?php elseif($shop->shop_switcher === 1) : ?>
       <figure>
-      <a href="<?= $pdfParfume ?>" class="shop__product">
-        <img src="<?= $shopHelmet ?>" width="266" height="267" alt="Shop Kohoutek" loading="lazy">
-        <figcaption>Accessories</figcaption>
-      </a>
+        <img src="<?= $shop->shop_image->webpUrl ?>" width="266" height="267" alt="Shop Kohoutek" loading="lazy">
+        <figcaption><?= $shop->heading_shop ?></figcaption>
       </figure>
+      <div class="gallery pswp-gallery" id="gallery--<?= $shop->id ?>" style="display: none;">
+        <?php foreach ($shop->shop_gallery as $image) : ?>  
+          <a href="<?= $image->url ?>"
+          data-pswp-width="<?= $image->width(); ?>" 
+          data-pswp-height="<?= $image->height(); ?>"
+          target="_blank">
+        </a>
+        <?php endforeach; ?>
+      </div>
+      <?php endif; ?>
+    <?php endforeach; ?>
     </section>
-    <div class="gallery pswp-gallery" id="gallery--furniture" style="display: none;">
 
-      <a href="<?= $assets ."download/chairs/Gliss_921_01_red.jpg"; ?>"
-        data-pswp-width="2000" 
-        data-pswp-height="1373"
-        target="_blank">
-        <span>Gliss 921 Red</span>
-      </a>
-      <a href="<?= $assets ."download/chairs/Gliss_921_04_transparent.jpg"; ?>"
-        data-pswp-width="2000" 
-        data-pswp-height="1373"
-        target="_blank">
-        <span>Gliss 921 Transparent</span>
-      </a>
-      <a href="<?= $assets ."download/chairs/Gliss_921_05_black.jpg"; ?>"
-        data-pswp-width="2000" 
-        data-pswp-height="1373"
-        target="_blank">
-        <span>Gliss 921 Black</span>
-      </a>
-      <a href="<?= $assets ."download/chairs/Queen_650_03.jpg"; ?>"
-        data-pswp-width="2000" 
-        data-pswp-height="1373"
-        target="_blank">
-        <span>Queen 650</span>
-      </a>
-      <a href="<?= $assets ."download/chairs/Queen_650_07.jpg"; ?>"
-        data-pswp-width="2000" 
-        data-pswp-height="1373"
-        target="_blank">
-        <span>Queen 650</span>
-      </a>
-      <a href="<?= $assets ."download/chairs/Queen_650_08.jpg"; ?>"
-        data-pswp-width="2000" 
-        data-pswp-height="1373"
-        target="_blank">
-        <span>Queen 650 Black</span>
-      </a>
-      <a href="<?= $assets ."download/chairs/Queen_650_09.jpg"; ?>"
-        data-pswp-width="2000" 
-        data-pswp-height="1373"
-        target="_blank">
-        <span>Queen 650 Black</span>
-      </a>
-      <a href="<?= $assets ."download/chairs/Young_426_01_wenge.jpg"; ?>"
-        data-pswp-width="2000" 
-        data-pswp-height="1373"
-        target="_blank">
-        <span>Young 426</span>
-      </a>
-
-    </div>
   </article>
 </section>
