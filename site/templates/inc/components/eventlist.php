@@ -1,3 +1,5 @@
+
+
 <section class="eventlist">
   <article class="container">
     <div class="eventlist__body">
@@ -98,6 +100,7 @@
         <div class="body">
           <p><?= $event->body ?></p>
           <?= $flyerText ?>
+          <a href="<?= $info->reservation_link ?>" class="btn" target="_blank" rel="nofollow" data-event="reserveClickNav"><?= $reservationLinkText ?></a>
         </div>
       </div>
       
