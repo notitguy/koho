@@ -21,7 +21,7 @@ $pdfParfume = $assets ."download/cat_lpdo_2021.pdf";
       <!-- <h3>Online shop coming soon!</h3> -->
     </div>
     <section class="shop__tiles">
-    <?php foreach ($page->shop_repeater->find("limit=4") as $shop) : ?>
+    <?php foreach ($page->shop_repeater->find("limit=6") as $shop) : ?>
       <?php if($shop->shop_switcher === 0 && $shop->shop_pdf == null) : ?>
       <figure>
         <img src="<?= $shop->shop_image->webpUrl ?>" width="266" height="267" alt="Shop Kohoutek" loading="lazy">

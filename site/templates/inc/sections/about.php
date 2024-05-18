@@ -40,10 +40,10 @@ $galleryIcon = $assets ."icons/gallery.svg";
         </div>
       </div>
       <div class="videos">
-        <video autoplay muted loop >
+        <video autoplay muted loop playsinline >
           <source src="<?= $assets . "video/IMG_0731.MP4" ?>" type=video/mp4>
         </video>
-        <video autoplay muted loop >
+        <video autoplay muted loop playsinline >
           <source src="<?= $assets . "video/IMG_0732.MP4" ?>" type=video/mp4>
         </video>
       </div>

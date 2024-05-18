@@ -1,6 +1,6 @@
 section#shop {
   & article {
-    display: flex;
+    display: grid;
     gap: var(--gutter-l);
   }
   & h2 {
@@ -32,9 +32,9 @@ section#shop {
 
       &:hover {
         box-shadow: 4px 5px var(--c-primary);
-        transform: skew(-1deg, -1deg)translate(-4px,-5px)
+        transform: skew(-1deg, -1deg) translate(-4px, -5px);
       }
-        
+
       & img {
         height: auto;
       }
@@ -80,9 +80,7 @@ section#shop {
 }
 
 @media (width > 768px) {
-
   section#shop article {
-
     & .shop__tiles figure {
       width: 171px;
     }
