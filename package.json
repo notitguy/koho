@@ -36,6 +36,6 @@
   },
   "dependencies": {
     "photoswipe": "^5.3.7",
-    "swiper": "^9.1.0"
+    "swiper": "^12.1.2"
   }
 }
